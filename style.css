@@ -1,0 +1,32 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
+  margin-top: 2.5rem;
+}
+
+a {
+  color: #0366d6;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
