@@ -6,6 +6,9 @@
   <title>Victor | Portfolio</title>
   <meta name="description" content="Victor's portfolio: projects, resume, and contact info.">
 
+  <!-- Lets the CSS know JavaScript is on, so scroll animations only run when they can -->
+  <script>document.documentElement.classList.add('js');</script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,13 +16,10 @@
 </head>
 <body id="top">
 
-  <!-- Sidebar / top bar -->
-  <header class="side">
-    <a class="name" href="#top">Victor</a>
-    <p class="role"><!-- EDIT: your role --> Student and aspiring developer</p>
-
+  <!-- ============ TOP BAR ============ -->
+  <header class="top">
+    <a class="brand" href="#top">Victor</a>
     <nav aria-label="Main">
-      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
@@ -28,128 +28,261 @@
 
   <main>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h1 class="headline">
-        <!-- EDIT: one sentence that says what you do -->
-        I build small, useful things for the web.
-      </h1>
+    <!-- ============ HERO: photo on the left, quote on the right ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-inner">
 
-      <div class="prose">
-        <p>
-          <!-- EDIT: two or three sentences about you -->
-          Hi, I'm Victor. I'm interested in software and in figuring out how things work.
-          Right now I'm learning by building projects and putting them online.
-        </p>
-        <p>
-          <!-- EDIT: what you're looking for or currently working on -->
-          I'm currently looking for internships and opportunities to work on real products with a team.
-        </p>
+        <!-- EDIT: upload your photo to the repo and name it me.jpg
+             (a square photo of your face works best) -->
+        <div class="avatar-wrap">
+          <div class="avatar">
+            <span class="avatar-fallback" aria-hidden="true">V</span>
+            <img src="me.jpg" alt="Photo of Victor" onerror="this.remove()">
+          </div>
+        </div>
+
+        <div class="quote-block">
+          <!-- EDIT: your quote (your own words, or one you like) -->
+          <blockquote>
+            <p>&ldquo;Make it work, then make it good, then make it yours.&rdquo;</p>
+          </blockquote>
+          <!-- EDIT: who said it, or delete this line if it's your own -->
+          <p class="quote-by">Victor</p>
+
+          <!-- EDIT: a short intro about you -->
+          <p class="intro">
+            I'm a student and aspiring developer who learns by building things and putting them online.
+            Scroll down to see what I've made.
+          </p>
+        </div>
+
       </div>
-
-      <ul class="skills" aria-label="Skills">
-        <!-- EDIT: add or remove skills -->
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Git</li>
-      </ul>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2>Projects</h2>
+          <p class="section-note">Click any project to see more.</p>
+        </div>
 
-      <!-- EDIT: copy one <article> block for each project you want to show -->
-      <article class="project">
-        <div class="project-main">
-          <h3>Project name</h3>
-          <p>One or two sentences: what it does, who it's for, and what you learned building it.</p>
-          <ul class="tags">
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
+        <!-- EDIT: to add a project, copy one <li class="reveal">...</li> block below
+             AND its matching <dialog>...</dialog> further down.
+             The data-open="p1" on the button must match the id="p1" on the dialog. -->
+        <ul class="grid">
+
+          <!-- Project 1 (the large featured one) -->
+          <li class="reveal featured">
+            <button class="card" type="button" data-open="p1">
+              <span class="thumb">
+                <span class="thumb-label">Add a screenshot (project1.jpg)</span>
+                <img src="project1.jpg" alt="" loading="lazy" onerror="this.remove()">
+              </span>
+              <span class="card-text">
+                <span class="card-title">Project name</span>
+                <span class="card-desc">A one or two sentence summary of what this project does and who it's for.</span>
+                <span class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></span>
+                <span class="card-more">View details</span>
+              </span>
+            </button>
+          </li>
+
+          <!-- Project 2 -->
+          <li class="reveal" style="--d: 80ms">
+            <button class="card" type="button" data-open="p2">
+              <span class="thumb">
+                <span class="thumb-label">Add a screenshot (project2.jpg)</span>
+                <img src="project2.jpg" alt="" loading="lazy" onerror="this.remove()">
+              </span>
+              <span class="card-text">
+                <span class="card-title">Another project</span>
+                <span class="card-desc">Lead with the problem it solves, in one short sentence.</span>
+                <span class="tags"><span>Python</span><span>API</span></span>
+                <span class="card-more">View details</span>
+              </span>
+            </button>
+          </li>
+
+          <!-- Project 3 -->
+          <li class="reveal" style="--d: 160ms">
+            <button class="card" type="button" data-open="p3">
+              <span class="thumb">
+                <span class="thumb-label">Add a screenshot (project3.jpg)</span>
+                <img src="project3.jpg" alt="" loading="lazy" onerror="this.remove()">
+              </span>
+              <span class="card-text">
+                <span class="card-title">Third project</span>
+                <span class="card-desc">Three strong projects beat ten unfinished ones.</span>
+                <span class="tags"><span>React</span></span>
+                <span class="card-more">View details</span>
+              </span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESUME + CONTACT ============ -->
+    <section class="section last">
+      <div class="wrap two-col">
+
+        <!-- Resume -->
+        <div id="resume" class="reveal">
+          <h2>Resume</h2>
+          <p class="section-note">The short version is below. The full resume is a PDF.</p>
+
+          <!-- EDIT: upload your resume to the repo and name it resume.pdf -->
+          <a class="button" href="resume.pdf" target="_blank" rel="noopener">Read my resume (PDF)</a>
+
+          <dl class="timeline">
+            <!-- EDIT: add or remove entries, newest first -->
+            <div>
+              <dt>2024 &ndash; present</dt>
+              <dd>
+                <strong>Your school or program</strong>
+                <span>What you're studying</span>
+              </dd>
+            </div>
+            <div>
+              <dt>2023</dt>
+              <dd>
+                <strong>Job, club, or volunteer role</strong>
+                <span>One line on what you did</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="reveal" style="--d: 120ms">
+          <h2>Contact</h2>
+          <p class="section-note">The best way to reach me is email. I usually reply within a couple of days.</p>
+
+          <ul class="contact-list">
+            <!-- EDIT: your real email and LinkedIn link -->
+            <li><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><a href="https://github.com/victorgalut">github.com/victorgalut</a></li>
+            <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
           </ul>
         </div>
-        <div class="project-links">
-          <a href="https://github.com/victorgalut/your-repo-name">Code</a>
-          <a href="https://example.com">Live demo</a>
-        </div>
-      </article>
 
-      <article class="project">
-        <div class="project-main">
-          <h3>Another project</h3>
-          <p>Describe this one the same way. Lead with the problem it solves.</p>
-          <ul class="tags">
-            <li>Python</li>
-            <li>API</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/victorgalut/your-repo-name">Code</a>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-main">
-          <h3>Third project</h3>
-          <p>Three strong projects beat ten unfinished ones. Delete this block if you only have two.</p>
-          <ul class="tags">
-            <li>React</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/victorgalut/your-repo-name">Code</a>
-        </div>
-      </article>
+      </div>
     </section>
-
-    <!-- RESUME -->
-    <section id="resume">
-      <h2>Resume</h2>
-      <p class="resume-intro">The short version is below. The full resume is a PDF.</p>
-
-      <!-- EDIT: the PDF must be uploaded to this repo and named resume.pdf -->
-      <a class="button" href="resume.pdf" target="_blank" rel="noopener">Read my resume (PDF)</a>
-
-      <dl class="timeline">
-        <!-- EDIT: add or remove entries, newest first -->
-        <div>
-          <dt>2024 – present</dt>
-          <dd>
-            <strong>Your school or program</strong>
-            <span>What you're studying</span>
-          </dd>
-        </div>
-        <div>
-          <dt>2023</dt>
-          <dd>
-            <strong>Job, club, or volunteer role</strong>
-            <span>One line on what you did</span>
-          </dd>
-        </div>
-      </dl>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="contact-intro">The best way to reach me is email. I usually reply within a couple of days.</p>
-
-      <ul class="contact-list">
-        <!-- EDIT: put your real email and LinkedIn link -->
-        <li><a href="mailto:you@example.com">you@example.com</a></li>
-        <li><a href="https://github.com/victorgalut">github.com/victorgalut</a></li>
-        <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>&copy; 2026 Victor</p>
-    </footer>
 
   </main>
+
+  <footer>
+    <p>&copy; 2026 Victor</p>
+  </footer>
+
+
+  <!-- ============ PROJECT DETAIL POPUPS ============ -->
+  <!-- Each popup opens when its card is clicked. Put the longer story here. -->
+
+  <dialog id="p1" aria-labelledby="p1-title">
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3 id="p1-title">Project name</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-img">
+        <span class="thumb-label">Add a screenshot (project1.jpg)</span>
+        <img src="project1.jpg" alt="" loading="lazy" onerror="this.remove()">
+      </div>
+      <h4>What it is</h4>
+      <p>A longer description. Explain the problem, who it's for, and how it works in a few sentences.</p>
+      <h4>What I built</h4>
+      <p>Describe your part: the features you made, the tools you used, and any decisions you're proud of.</p>
+      <h4>What I learned</h4>
+      <p>One or two things this project taught you, or something you'd do differently next time.</p>
+      <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+      <div class="modal-links">
+        <a class="button" href="https://example.com" target="_blank" rel="noopener">Live demo</a>
+        <a class="button ghost" href="https://github.com/victorgalut/your-repo-name" target="_blank" rel="noopener">View code</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="p2" aria-labelledby="p2-title">
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3 id="p2-title">Another project</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-img">
+        <span class="thumb-label">Add a screenshot (project2.jpg)</span>
+        <img src="project2.jpg" alt="" loading="lazy" onerror="this.remove()">
+      </div>
+      <h4>What it is</h4>
+      <p>A longer description of this project.</p>
+      <h4>What I built</h4>
+      <p>Your part in it and the tools you used.</p>
+      <h4>What I learned</h4>
+      <p>What this project taught you.</p>
+      <div class="tags"><span>Python</span><span>API</span></div>
+      <div class="modal-links">
+        <a class="button ghost" href="https://github.com/victorgalut/your-repo-name" target="_blank" rel="noopener">View code</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="p3" aria-labelledby="p3-title">
+    <div class="modal-body">
+      <div class="modal-head">
+        <h3 id="p3-title">Third project</h3>
+        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-img">
+        <span class="thumb-label">Add a screenshot (project3.jpg)</span>
+        <img src="project3.jpg" alt="" loading="lazy" onerror="this.remove()">
+      </div>
+      <h4>What it is</h4>
+      <p>A longer description of this project.</p>
+      <h4>What I built</h4>
+      <p>Your part in it and the tools you used.</p>
+      <h4>What I learned</h4>
+      <p>What this project taught you.</p>
+      <div class="tags"><span>React</span></div>
+      <div class="modal-links">
+        <a class="button ghost" href="https://github.com/victorgalut/your-repo-name" target="_blank" rel="noopener">View code</a>
+      </div>
+    </div>
+  </dialog>
+
+
+  <script>
+    // Fade sections in when they scroll into view, and out when they leave
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('in-view', entry.isIntersecting);
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    // Open a project popup when its card is clicked
+    document.querySelectorAll('[data-open]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const dialog = document.getElementById(button.dataset.open);
+        dialog.showModal();
+        document.documentElement.classList.add('modal-open');
+      });
+    });
+
+    document.querySelectorAll('dialog').forEach((dialog) => {
+      // Close button
+      dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+      // Clicking the dark area outside the popup closes it
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+      // Stop the page behind from staying locked
+      dialog.addEventListener('close', () => {
+        document.documentElement.classList.remove('modal-open');
+      });
+    });
+  </script>
 </body>
 </html>
