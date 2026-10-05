@@ -307,7 +307,8 @@ h2 {
 }
 
 .thumb,
-.modal-img {
+.slide-img,
+.interest-photo {
   position: relative;
   overflow: hidden;
   background:
@@ -320,7 +321,8 @@ h2 {
 }
 
 .thumb img,
-.modal-img img {
+.slide-img img,
+.interest-photo img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -560,12 +562,6 @@ dialog::backdrop {
   transform: scale(1.08);
 }
 
-.modal-img {
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-}
-
 dialog h4 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -577,9 +573,150 @@ dialog p {
   color: var(--muted);
 }
 
-.modal-links {
+
+/* ---------- Image carousel inside project popups ---------- */
+.carousel {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.track {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.slide-img {
+  aspect-ratio: 16 / 9;
+}
+
+.slide figcaption {
+  padding: 0.9rem 1.1rem 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  min-height: 3.4rem;
+}
+
+/* Arrows sit on top of the picture area only */
+.arrows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.6rem;
+  pointer-events: none;
+}
+
+.arrow {
+  pointer-events: auto;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(17, 24, 39, 0.62);
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.arrow:hover {
+  background: rgba(17, 24, 39, 0.92);
+  transform: scale(1.12);
+}
+
+.arrow:focus-visible {
+  outline-color: #ffffff;
+  outline-offset: 2px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0 0.9rem;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--line);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.dot.active {
+  background: var(--accent);
+  transform: scale(1.3);
+}
+
+.carousel.single .arrows,
+.carousel.single .dots {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    transition: none;
+  }
+}
+
+/* ---------- Interests & hobbies ---------- */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.interest-photo {
+  aspect-ratio: 4 / 3;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.interest:hover .interest-photo {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.interest h3 {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.375rem;
+  letter-spacing: -0.015em;
+}
+
+.interest p {
+  margin-top: 0.3rem;
+  color: var(--muted);
+}
+
+/* ---------- Small screens: keep the top bar on one line ---------- */
+@media (max-width: 520px) {
+  .top nav {
+    gap: 0.9rem;
+    font-size: 0.95rem;
+  }
 }
