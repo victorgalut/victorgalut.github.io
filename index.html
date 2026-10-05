@@ -4,35 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor | Portfolio</title>
+  <meta name="description" content="Victor's portfolio: projects, resume, and contact info.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Victor</h1>
-    <p>A short line about what you do or want to do.</p>
+<body id="top">
+
+  <!-- Sidebar / top bar -->
+  <header class="side">
+    <a class="name" href="#top">Victor</a>
+    <p class="role"><!-- EDIT: your role --> Student and aspiring developer</p>
+
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>About</h2>
-      <p>Write two or three sentences about yourself here.</p>
-    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3><a href="https://github.com/victorgalut/your-repo">Project name</a></h3>
-        <p>One sentence about what it does and what you used to build it.</p>
+    <!-- ABOUT -->
+    <section id="about">
+      <h1 class="headline">
+        <!-- EDIT: one sentence that says what you do -->
+        I build small, useful things for the web.
+      </h1>
+
+      <div class="prose">
+        <p>
+          <!-- EDIT: two or three sentences about you -->
+          Hi, I'm Victor. I'm interested in software and in figuring out how things work.
+          Right now I'm learning by building projects and putting them online.
+        </p>
+        <p>
+          <!-- EDIT: what you're looking for or currently working on -->
+          I'm currently looking for internships and opportunities to work on real products with a team.
+        </p>
       </div>
+
+      <ul class="skills" aria-label="Skills">
+        <!-- EDIT: add or remove skills -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git</li>
+      </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        <a href="https://github.com/victorgalut">GitHub</a> ·
-        <a href="mailto:you@example.com">Email</a>
-      </p>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- EDIT: copy one <article> block for each project you want to show -->
+      <article class="project">
+        <div class="project-main">
+          <h3>Project name</h3>
+          <p>One or two sentences: what it does, who it's for, and what you learned building it.</p>
+          <ul class="tags">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/victorgalut/your-repo-name">Code</a>
+          <a href="https://example.com">Live demo</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-main">
+          <h3>Another project</h3>
+          <p>Describe this one the same way. Lead with the problem it solves.</p>
+          <ul class="tags">
+            <li>Python</li>
+            <li>API</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/victorgalut/your-repo-name">Code</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-main">
+          <h3>Third project</h3>
+          <p>Three strong projects beat ten unfinished ones. Delete this block if you only have two.</p>
+          <ul class="tags">
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/victorgalut/your-repo-name">Code</a>
+        </div>
+      </article>
     </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p class="resume-intro">The short version is below. The full resume is a PDF.</p>
+
+      <!-- EDIT: the PDF must be uploaded to this repo and named resume.pdf -->
+      <a class="button" href="resume.pdf" target="_blank" rel="noopener">Read my resume (PDF)</a>
+
+      <dl class="timeline">
+        <!-- EDIT: add or remove entries, newest first -->
+        <div>
+          <dt>2024 – present</dt>
+          <dd>
+            <strong>Your school or program</strong>
+            <span>What you're studying</span>
+          </dd>
+        </div>
+        <div>
+          <dt>2023</dt>
+          <dd>
+            <strong>Job, club, or volunteer role</strong>
+            <span>One line on what you did</span>
+          </dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-intro">The best way to reach me is email. I usually reply within a couple of days.</p>
+
+      <ul class="contact-list">
+        <!-- EDIT: put your real email and LinkedIn link -->
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/victorgalut">github.com/victorgalut</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Victor</p>
+    </footer>
+
   </main>
 </body>
 </html>
