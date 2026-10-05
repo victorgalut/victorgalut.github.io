@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor | Portfolio</title>
-  <meta name="description" content="Victor's portfolio: projects, experience, interests, resume, and contact info.">
+  <meta name="description" content="Victor's portfolio: experience, projects, interests, resume, and contact info.">
 
   <!-- Lets the CSS know JavaScript is on, so scroll animations only run when they can -->
   <script>document.documentElement.classList.add('js');</script>
@@ -20,8 +20,8 @@
   <header class="top">
     <a class="brand" href="#top">Victor</a>
     <nav aria-label="Main">
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#interests">Interests</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
@@ -54,10 +54,312 @@
           <!-- EDIT: a short intro about you -->
           <p class="intro">
             I'm a student and aspiring developer who learns by building things and putting them online.
-            Scroll down to see what I've made.
+            Scroll down to see my experience and the projects I've built.
           </p>
         </div>
 
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <div class="reveal">
+          <h2>Experience</h2>
+          <p class="section-note">Teams and roles I've been part of. Open one to see what I did there, and use the arrows on the photos to see more.</p>
+        </div>
+
+        <!-- EDIT: each <details class="exp reveal">...</details> block is one team or role, newest first.
+             Add "open" after class="exp reveal" to make it start expanded.
+             Inside, each <li class="contrib"> is one thing you did for that team.
+             Copy a <li class="contrib"> block to add another one.
+             The "Read more" button opens a popup showing whatever is inside that card's <div class="more" hidden>.
+             Put your longer write-up there (you can use <p>, <h4>, <ul>, and even <img src="...">).
+             Each contribution has a photo slider: copy a <div class="slide">...</div> block to add
+             a photo, or delete one to remove it. Photo names look like exp1-c1-1.jpg
+             (experience 1, contribution 1, photo 1). -->
+        <div class="exp-list">
+
+          <!-- Experience 1 (starts open) -->
+          <details class="exp reveal" open>
+            <summary>
+              <span class="exp-logo">
+                <span class="thumb-label">Logo</span>
+                <img src="exp1-logo.jpg" alt="" loading="lazy" onerror="this.remove()">
+              </span>
+              <span class="exp-head">
+                <span class="exp-role">Team member</span>
+                <span class="exp-meta">
+                  <span>Student Design Team, Your University</span>
+                  <span>Sep 2024 &ndash; present</span>
+                </span>
+                <span class="exp-blurb">One line on what the team does and what your part is.</span>
+              </span>
+              <span class="exp-chevron"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </summary>
+
+            <div class="exp-body">
+              <p>A short paragraph: what the team is, what it builds or competes in, and what you're responsible for.</p>
+
+              <h4>What I worked on</h4>
+              <ul class="contribs">
+                <li class="contrib">
+                  <div class="carousel mini" data-carousel>
+                    <div class="track">
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c1-1.jpg)</span>
+                          <img src="exp1-c1-1.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c1-2.jpg)</span>
+                          <img src="exp1-c1-2.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c1-3.jpg)</span>
+                          <img src="exp1-c1-3.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arrows">
+                      <button class="arrow prev" type="button" aria-label="Previous photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                      </button>
+                      <button class="arrow next" type="button" aria-label="Next photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="contrib-text">
+                    <h5>Contribution one</h5>
+                    <p>What you did and what came of it. Numbers help, like &ldquo;cut assembly time by 20%.&rdquo;</p>
+                    <div class="tags"><span>Tool or skill</span><span>Tool or skill</span></div>
+                    <button class="contrib-more" type="button">Read more</button>
+                    <div class="more" hidden>
+                      <h4>Overview</h4>
+                      <p>The full story: what the problem was, why it mattered to the team, and how you got involved.</p>
+                      <h4>What I did</h4>
+                      <ul>
+                        <li>First thing you did or were responsible for.</li>
+                        <li>Second thing, with the tools or methods you used.</li>
+                        <li>Third thing, like testing, presenting, or working with teammates.</li>
+                      </ul>
+                      <h4>Result</h4>
+                      <p>What came of it. Numbers, awards, or feedback from teammates work well here.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="contrib">
+                  <div class="carousel mini" data-carousel>
+                    <div class="track">
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c2-1.jpg)</span>
+                          <img src="exp1-c2-1.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c2-2.jpg)</span>
+                          <img src="exp1-c2-2.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arrows">
+                      <button class="arrow prev" type="button" aria-label="Previous photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                      </button>
+                      <button class="arrow next" type="button" aria-label="Next photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="contrib-text">
+                    <h5>Contribution two</h5>
+                    <p>Describe a second thing you built, designed, fixed, or led.</p>
+                    <div class="tags"><span>Tool or skill</span></div>
+                    <button class="contrib-more" type="button">Read more</button>
+                    <div class="more" hidden>
+                      <h4>Overview</h4>
+                      <p>The full story: what the problem was, why it mattered to the team, and how you got involved.</p>
+                      <h4>What I did</h4>
+                      <ul>
+                        <li>First thing you did or were responsible for.</li>
+                        <li>Second thing, with the tools or methods you used.</li>
+                        <li>Third thing, like testing, presenting, or working with teammates.</li>
+                      </ul>
+                      <h4>Result</h4>
+                      <p>What came of it. Numbers, awards, or feedback from teammates work well here.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="contrib">
+                  <div class="carousel mini" data-carousel>
+                    <div class="track">
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c3-1.jpg)</span>
+                          <img src="exp1-c3-1.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp1-c3-2.jpg)</span>
+                          <img src="exp1-c3-2.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arrows">
+                      <button class="arrow prev" type="button" aria-label="Previous photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                      </button>
+                      <button class="arrow next" type="button" aria-label="Next photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="contrib-text">
+                    <h5>Contribution three</h5>
+                    <p>Things like presentations, competitions, or teaching new members count too.</p>
+                    <div class="tags"><span>Tool or skill</span></div>
+                    <button class="contrib-more" type="button">Read more</button>
+                    <div class="more" hidden>
+                      <h4>Overview</h4>
+                      <p>The full story: what the problem was, why it mattered to the team, and how you got involved.</p>
+                      <h4>What I did</h4>
+                      <ul>
+                        <li>First thing you did or were responsible for.</li>
+                        <li>Second thing, with the tools or methods you used.</li>
+                        <li>Third thing, like testing, presenting, or working with teammates.</li>
+                      </ul>
+                      <h4>Result</h4>
+                      <p>What came of it. Numbers, awards, or feedback from teammates work well here.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Experience 2 (starts closed) -->
+          <details class="exp reveal" style="--d: 100ms">
+            <summary>
+              <span class="exp-logo">
+                <span class="thumb-label">Logo</span>
+                <img src="exp2-logo.jpg" alt="" loading="lazy" onerror="this.remove()">
+              </span>
+              <span class="exp-head">
+                <span class="exp-role">Another role</span>
+                <span class="exp-meta">
+                  <span>Club, job, or volunteer group</span>
+                  <span>Summer 2023</span>
+                </span>
+                <span class="exp-blurb">One line on what you did there.</span>
+              </span>
+              <span class="exp-chevron"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+            </summary>
+
+            <div class="exp-body">
+              <p>A short paragraph about this role and what you took away from it.</p>
+
+              <h4>What I worked on</h4>
+              <ul class="contribs">
+                <li class="contrib">
+                  <div class="carousel mini" data-carousel>
+                    <div class="track">
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp2-c1-1.jpg)</span>
+                          <img src="exp2-c1-1.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp2-c1-2.jpg)</span>
+                          <img src="exp2-c1-2.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arrows">
+                      <button class="arrow prev" type="button" aria-label="Previous photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                      </button>
+                      <button class="arrow next" type="button" aria-label="Next photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="contrib-text">
+                    <h5>Contribution one</h5>
+                    <p>What you did and the result.</p>
+                    <div class="tags"><span>Tool or skill</span></div>
+                    <button class="contrib-more" type="button">Read more</button>
+                    <div class="more" hidden>
+                      <h4>Overview</h4>
+                      <p>The full story: what the problem was, why it mattered to the team, and how you got involved.</p>
+                      <h4>What I did</h4>
+                      <ul>
+                        <li>First thing you did or were responsible for.</li>
+                        <li>Second thing, with the tools or methods you used.</li>
+                        <li>Third thing, like testing, presenting, or working with teammates.</li>
+                      </ul>
+                      <h4>Result</h4>
+                      <p>What came of it. Numbers, awards, or feedback from teammates work well here.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="contrib">
+                  <div class="carousel mini" data-carousel>
+                    <div class="track">
+                      <div class="slide">
+                        <div class="slide-img">
+                          <span class="thumb-label">Add a photo (exp2-c2-1.jpg)</span>
+                          <img src="exp2-c2-1.jpg" alt="" loading="lazy" onerror="this.remove()">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arrows">
+                      <button class="arrow prev" type="button" aria-label="Previous photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+                      </button>
+                      <button class="arrow next" type="button" aria-label="Next photo">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+                      </button>
+                    </div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="contrib-text">
+                    <h5>Contribution two</h5>
+                    <p>Another thing you did.</p>
+                    <div class="tags"><span>Tool or skill</span></div>
+                    <button class="contrib-more" type="button">Read more</button>
+                    <div class="more" hidden>
+                      <h4>Overview</h4>
+                      <p>The full story: what the problem was, why it mattered to the team, and how you got involved.</p>
+                      <h4>What I did</h4>
+                      <ul>
+                        <li>First thing you did or were responsible for.</li>
+                        <li>Second thing, with the tools or methods you used.</li>
+                        <li>Third thing, like testing, presenting, or working with teammates.</li>
+                      </ul>
+                      <h4>Result</h4>
+                      <p>What came of it. Numbers, awards, or feedback from teammates work well here.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
       </div>
     </section>
 
@@ -124,133 +426,6 @@
           </li>
 
         </ul>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2>Experience</h2>
-          <p class="section-note">Teams and roles I've been part of. Open one to see what I did there.</p>
-        </div>
-
-        <!-- EDIT: each <details class="exp reveal">...</details> block is one team or role, newest first.
-             Add "open" after class="exp reveal" to make it start expanded.
-             Inside, each <li class="contrib"> is one thing you did for that team.
-             Copy a <li class="contrib"> block to add another one. -->
-        <div class="exp-list">
-
-          <!-- Experience 1 (starts open) -->
-          <details class="exp reveal" open>
-            <summary>
-              <span class="exp-logo">
-                <span class="thumb-label">Logo</span>
-                <img src="exp1-logo.jpg" alt="" loading="lazy" onerror="this.remove()">
-              </span>
-              <span class="exp-head">
-                <span class="exp-role">Team member</span>
-                <span class="exp-meta">
-                  <span>Student Design Team, Your University</span>
-                  <span>Sep 2024 &ndash; present</span>
-                </span>
-                <span class="exp-blurb">One line on what the team does and what your part is.</span>
-              </span>
-              <span class="exp-chevron"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
-            </summary>
-
-            <div class="exp-body">
-              <p>A short paragraph: what the team is, what it builds or competes in, and what you're responsible for.</p>
-
-              <h4>What I worked on</h4>
-              <ul class="contribs">
-                <li class="contrib">
-                  <div class="contrib-photo">
-                    <span class="thumb-label">Add a photo (exp1-1.jpg)</span>
-                    <img src="exp1-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-                  </div>
-                  <div class="contrib-text">
-                    <h5>Contribution one</h5>
-                    <p>What you did and what came of it. Numbers help, like &ldquo;cut assembly time by 20%.&rdquo;</p>
-                    <div class="tags"><span>Tool or skill</span><span>Tool or skill</span></div>
-                  </div>
-                </li>
-                <li class="contrib">
-                  <div class="contrib-photo">
-                    <span class="thumb-label">Add a photo (exp1-2.jpg)</span>
-                    <img src="exp1-2.jpg" alt="" loading="lazy" onerror="this.remove()">
-                  </div>
-                  <div class="contrib-text">
-                    <h5>Contribution two</h5>
-                    <p>Describe a second thing you built, designed, fixed, or led.</p>
-                    <div class="tags"><span>Tool or skill</span></div>
-                  </div>
-                </li>
-                <li class="contrib">
-                  <div class="contrib-photo">
-                    <span class="thumb-label">Add a photo (exp1-3.jpg)</span>
-                    <img src="exp1-3.jpg" alt="" loading="lazy" onerror="this.remove()">
-                  </div>
-                  <div class="contrib-text">
-                    <h5>Contribution three</h5>
-                    <p>Things like presentations, competitions, or teaching new members count too.</p>
-                    <div class="tags"><span>Tool or skill</span></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- Experience 2 (starts closed) -->
-          <details class="exp reveal" style="--d: 100ms">
-            <summary>
-              <span class="exp-logo">
-                <span class="thumb-label">Logo</span>
-                <img src="exp2-logo.jpg" alt="" loading="lazy" onerror="this.remove()">
-              </span>
-              <span class="exp-head">
-                <span class="exp-role">Another role</span>
-                <span class="exp-meta">
-                  <span>Club, job, or volunteer group</span>
-                  <span>Summer 2023</span>
-                </span>
-                <span class="exp-blurb">One line on what you did there.</span>
-              </span>
-              <span class="exp-chevron"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
-            </summary>
-
-            <div class="exp-body">
-              <p>A short paragraph about this role and what you took away from it.</p>
-
-              <h4>What I worked on</h4>
-              <ul class="contribs">
-                <li class="contrib">
-                  <div class="contrib-photo">
-                    <span class="thumb-label">Add a photo (exp2-1.jpg)</span>
-                    <img src="exp2-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-                  </div>
-                  <div class="contrib-text">
-                    <h5>Contribution one</h5>
-                    <p>What you did and the result.</p>
-                    <div class="tags"><span>Tool or skill</span></div>
-                  </div>
-                </li>
-                <li class="contrib">
-                  <div class="contrib-photo">
-                    <span class="thumb-label">Add a photo (exp2-2.jpg)</span>
-                    <img src="exp2-2.jpg" alt="" loading="lazy" onerror="this.remove()">
-                  </div>
-                  <div class="contrib-text">
-                    <h5>Contribution two</h5>
-                    <p>Another thing you did.</p>
-                    <div class="tags"><span>Tool or skill</span></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-        </div>
       </div>
     </section>
 
@@ -331,7 +506,31 @@
         <!-- Contact -->
         <div id="contact" class="reveal" style="--d: 120ms">
           <h2>Contact</h2>
-          <p class="section-note">The best way to reach me is email. I usually reply within a couple of days.</p>
+          <p class="section-note">Send me a message and it goes straight to my email. I usually reply within a couple of days.</p>
+
+          <!-- SETUP (one time, about 5 minutes):
+               1. Go to formspree.io and make a free account.
+               2. Create a new form and enter the email where you want messages.
+               3. Copy the form link it gives you (it looks like https://formspree.io/f/abcdwxyz)
+                  and paste it over YOUR_FORM_ID in the action="" below. -->
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/xkjowdzd" method="POST">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <!-- Hidden trap field: real people never see it, spam bots fill it in -->
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="button" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
 
           <ul class="contact-list">
             <!-- EDIT: your real email and LinkedIn link -->
@@ -517,6 +716,22 @@
   </dialog>
 
 
+  <!-- ---------- "Read more" popup for experience contributions ---------- -->
+  <!-- You don't need to edit this one. It fills itself from the card you clicked. -->
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="modal-body">
+      <div class="modal-head">
+        <div>
+          <h3 id="detail-title"></h3>
+          <p class="detail-sub"></p>
+        </div>
+        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="detail-content"></div>
+    </div>
+  </dialog>
+
+
   <script>
     // Fade sections in when they scroll into view, and out when they leave
     const observer = new IntersectionObserver((entries) => {
@@ -583,11 +798,14 @@
       carousel.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
       carousel.querySelector('.next').addEventListener('click', () => goTo(current + 1));
 
-      // Left / right arrow keys while the popup is open
-      carousel.closest('dialog').addEventListener('keydown', (event) => {
-        if (event.key === 'ArrowLeft') goTo(current - 1);
-        if (event.key === 'ArrowRight') goTo(current + 1);
-      });
+      // Left / right arrow keys while a popup is open (popup slideshows only)
+      const popup = carousel.closest('dialog');
+      if (popup) {
+        popup.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowLeft') goTo(current - 1);
+          if (event.key === 'ArrowRight') goTo(current + 1);
+        });
+      }
 
       // Swipe on touch screens
       let startX = 0;
@@ -600,6 +818,57 @@
       });
 
       goTo(0);
+    });
+
+    // "Read more" popup on experience contributions
+    const detailDialog = document.getElementById('detail');
+    document.querySelectorAll('.contrib-more').forEach((button) => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.contrib');
+        const experience = button.closest('.exp');
+        detailDialog.querySelector('#detail-title').textContent = card.querySelector('h5').textContent;
+        detailDialog.querySelector('.detail-sub').textContent = experience.querySelector('.exp-meta span').textContent;
+        detailDialog.querySelector('.detail-content').innerHTML = card.querySelector('.more').innerHTML;
+        detailDialog.showModal();
+        detailDialog.scrollTop = 0;
+        document.documentElement.classList.add('modal-open');
+      });
+    });
+
+    // Contact form: send without leaving the page
+    const form = document.getElementById('contact-form');
+    const status = form.querySelector('.form-status');
+    const sendButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      status.className = 'form-status';
+
+      if (form.action.includes('YOUR_FORM_ID')) {
+        status.textContent = "This form isn't connected yet. Follow the SETUP note above the form in index.html.";
+        status.classList.add('error');
+        return;
+      }
+
+      sendButton.disabled = true;
+      sendButton.textContent = 'Sending...';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (!response.ok) throw new Error('Request failed');
+        form.reset();
+        status.textContent = "Thanks! Your message was sent.";
+      } catch (error) {
+        status.textContent = "Something went wrong and your message wasn't sent. Please try again, or use the email link below.";
+        status.classList.add('error');
+      } finally {
+        sendButton.disabled = false;
+        sendButton.textContent = 'Send message';
+      }
     });
   </script>
 </body>
