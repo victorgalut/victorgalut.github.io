@@ -426,9 +426,8 @@ button.btn:disabled {
 
 .hero blockquote p {
   max-width: 13ch;
-  font: italic 800 clamp(2.8rem, 6.4vw, 5.2rem)/0.98 var(--font-display);
+  font: italic 800 clamp(2.2rem, 4.5vw, 3.8rem)/.98 var(--font-display);
   text-transform: uppercase;
-  letter-spacing: 0.005em;
 }
 
 .quote-by {
