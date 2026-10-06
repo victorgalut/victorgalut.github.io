@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,473 +7,1306 @@
   <title>Victor | Portfolio</title>
   <meta name="description" content="Victor's portfolio: projects, interests, resume, and contact info.">
 
-  <!-- Lets the CSS know JavaScript is on, so scroll animations only run when they can -->
   <script>document.documentElement.classList.add('js');</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="top">
 
   <!-- ============ TOP BAR ============ -->
+
   <header class="top">
-    <a class="brand" href="#top">Victor</a>
-    <nav aria-label="Main">
-      <a href="#projects">Projects</a>
-      <a href="#interests">Interests</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a class="brand" href="#top">
+      <span class="brand-mark">V</span>
+      <span class="brand-name">Victor</span>
+    </a>
+
+```
+<nav aria-label="Main">
+  <a href="#projects">Projects</a>
+  <a href="#interests">Interests</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+```
+
   </header>
 
   <main>
 
-    <!-- ============ HERO: photo on the left, quote on the right ============ -->
-    <section class="hero" aria-label="Introduction">
-      <div class="hero-inner">
+```
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Introduction">
 
-        <!-- EDIT: upload your photo to the repo and name it me.jpg
-             (a square photo of your face works best) -->
-        <div class="avatar-wrap">
-          <div class="avatar">
-            <span class="avatar-fallback" aria-hidden="true">V</span>
-            <img src="me.jpg" alt="Photo of Victor" onerror="this.remove()">
-          </div>
+  <!-- Racing stripes -->
+  <div class="livery" aria-hidden="true">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+
+  <div class="hero-inner">
+
+    <!-- Profile / driver -->
+    <div class="driver">
+      <div class="dial">
+
+        <div class="avatar">
+          <span class="avatar-fallback" aria-hidden="true">V</span>
+          <img src="me.jpg" alt="Photo of Victor" onerror="this.remove()">
         </div>
 
-        <div class="quote-block">
-          <!-- EDIT: your quote (your own words, or one you like) -->
-          <blockquote>
-            <p>&ldquo;Make it work, then make it good, then make it yours.&rdquo;</p>
-          </blockquote>
-          <!-- EDIT: who said it, or delete this line if it's your own -->
-          <p class="quote-by">Victor</p>
+        <div class="plate">27</div>
 
-          <!-- EDIT: a short intro about you -->
-          <p class="intro">
-            I'm a student and aspiring developer who learns by building things and putting them online.
-            Scroll down to see what I've made.
+      </div>
+    </div>
+
+
+    <!-- Hero text -->
+    <div class="hero-text">
+
+      <div class="lights" aria-hidden="true">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+
+      <div class="status">
+        Engineering Student · Builder · Motorsport
+      </div>
+
+      <blockquote>
+        <p>
+          &ldquo;Make it work, then make it good, then make it yours.&rdquo;
+        </p>
+      </blockquote>
+
+      <p class="quote-by">Victor</p>
+
+      <p class="intro">
+        I'm an engineering student who likes designing, building, and
+        improving things. From racecar systems to robotics and software,
+        I learn by turning ideas into something real.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+
+      <dl class="specs">
+
+        <div>
+          <dt>Focus</dt>
+          <dd>Engineering</dd>
+        </div>
+
+        <div>
+          <dt>Interests</dt>
+          <dd>Motorsport</dd>
+        </div>
+
+        <div>
+          <dt>Build</dt>
+          <dd>Design + Code</dd>
+        </div>
+
+        <div>
+          <dt>Status</dt>
+          <dd>Available</dd>
+        </div>
+
+      </dl>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="checker" aria-hidden="true"></div>
+
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+
+  <div class="wrap">
+
+    <div class="reveal sec-head">
+      <span class="sector s1">01</span>
+      <h2>Projects</h2>
+    </div>
+
+    <p class="section-note reveal">
+      Click any project to see more.
+    </p>
+
+
+    <ul class="grid">
+
+      <!-- Project 1 -->
+      <li class="reveal featured">
+
+        <button class="card" type="button" data-open="p1">
+
+          <span class="thumb">
+            <span class="thumb-label">
+              Add a screenshot (project1-1.jpg)
+            </span>
+
+            <img
+              src="project1-1.jpg"
+              alt=""
+              loading="lazy"
+              onerror="this.remove()"
+            >
+          </span>
+
+          <span class="card-text">
+
+            <span class="card-title">
+              Project name
+            </span>
+
+            <span class="card-desc">
+              A one or two sentence summary of what this project does
+              and who it's for.
+            </span>
+
+            <span class="tags">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </span>
+
+            <span class="card-more">
+              View details
+            </span>
+
+          </span>
+
+        </button>
+
+      </li>
+
+
+      <!-- Project 2 -->
+      <li class="reveal" style="--d: 80ms">
+
+        <button class="card" type="button" data-open="p2">
+
+          <span class="thumb">
+            <span class="thumb-label">
+              Add a screenshot (project2-1.jpg)
+            </span>
+
+            <img
+              src="project2-1.jpg"
+              alt=""
+              loading="lazy"
+              onerror="this.remove()"
+            >
+          </span>
+
+          <span class="card-text">
+
+            <span class="card-title">
+              Another project
+            </span>
+
+            <span class="card-desc">
+              Lead with the problem it solves, in one short sentence.
+            </span>
+
+            <span class="tags">
+              <span>Python</span>
+              <span>API</span>
+            </span>
+
+            <span class="card-more">
+              View details
+            </span>
+
+          </span>
+
+        </button>
+
+      </li>
+
+
+      <!-- Project 3 -->
+      <li class="reveal" style="--d: 160ms">
+
+        <button class="card" type="button" data-open="p3">
+
+          <span class="thumb">
+            <span class="thumb-label">
+              Add a screenshot (project3-1.jpg)
+            </span>
+
+            <img
+              src="project3-1.jpg"
+              alt=""
+              loading="lazy"
+              onerror="this.remove()"
+            >
+          </span>
+
+          <span class="card-text">
+
+            <span class="card-title">
+              Third project
+            </span>
+
+            <span class="card-desc">
+              Three strong projects beat ten unfinished ones.
+            </span>
+
+            <span class="tags">
+              <span>React</span>
+            </span>
+
+            <span class="card-more">
+              View details
+            </span>
+
+          </span>
+
+        </button>
+
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+<!-- ============ INTERESTS ============ -->
+<section id="interests" class="section">
+
+  <div class="wrap">
+
+    <div class="reveal sec-head">
+      <span class="sector s2">02</span>
+      <h2>Interests &amp; hobbies</h2>
+    </div>
+
+    <p class="section-note reveal">
+      What I do when I'm not designing, building, or studying.
+    </p>
+
+
+    <ul class="interests-grid">
+
+      <!-- Interest 1 -->
+      <li class="reveal interest">
+
+        <div class="interest-photo">
+          <span class="thumb-label">
+            Add a photo (hobby1.jpg)
+          </span>
+
+          <img
+            src="hobby1.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <div class="interest-text">
+          <h3>Hobby or interest</h3>
+
+          <p>
+            A sentence or two about what you do and why you love it.
           </p>
         </div>
 
-      </div>
-    </section>
+      </li>
 
-    <!-- ============ PROJECTS ============ -->
-    <section id="projects" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2>Projects</h2>
-          <p class="section-note">Click any project to see more.</p>
+
+      <!-- Interest 2 -->
+      <li class="reveal interest" style="--d: 100ms">
+
+        <div class="interest-photo">
+          <span class="thumb-label">
+            Add a photo (hobby2.jpg)
+          </span>
+
+          <img
+            src="hobby2.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
         </div>
 
-        <!-- EDIT: to add a project, copy one <li class="reveal">...</li> block below
-             AND its matching <dialog>...</dialog> further down.
-             The data-open="p1" on the button must match the id="p1" on the dialog.
-             The card photo is the same as the first image in the popup (project1-1.jpg). -->
-        <ul class="grid">
+        <div class="interest-text">
+          <h3>Another interest</h3>
 
-          <!-- Project 1 (the large featured one) -->
-          <li class="reveal featured">
-            <button class="card" type="button" data-open="p1">
-              <span class="thumb">
-                <span class="thumb-label">Add a screenshot (project1-1.jpg)</span>
-                <img src="project1-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-              </span>
-              <span class="card-text">
-                <span class="card-title">Project name</span>
-                <span class="card-desc">A one or two sentence summary of what this project does and who it's for.</span>
-                <span class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></span>
-                <span class="card-more">View details</span>
-              </span>
-            </button>
+          <p>
+            Mention how long you've been doing it, or a favorite moment.
+          </p>
+        </div>
+
+      </li>
+
+
+      <!-- Interest 3 -->
+      <li class="reveal interest" style="--d: 200ms">
+
+        <div class="interest-photo">
+          <span class="thumb-label">
+            Add a photo (hobby3.jpg)
+          </span>
+
+          <img
+            src="hobby3.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <div class="interest-text">
+          <h3>A third one</h3>
+
+          <p>
+            Anything counts: sports, music, games, cooking, travel,
+            or reading.
+          </p>
+        </div>
+
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+<!-- ============ RESUME + CONTACT ============ -->
+<section class="section finish last">
+
+  <div class="wrap">
+
+    <div class="reveal sec-head">
+      <span class="sector fin">FIN</span>
+      <h2>Resume &amp; Contact</h2>
+    </div>
+
+
+    <div class="two-col">
+
+      <!-- Resume -->
+      <div id="resume" class="reveal panel">
+
+        <h3>Resume</h3>
+
+        <p class="section-note">
+          The short version is below. The full resume is a PDF.
+        </p>
+
+        <a
+          class="btn"
+          href="resume.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          Read my resume (PDF)
+        </a>
+
+
+        <dl class="timeline">
+
+          <div>
+            <dt>2024 &ndash; present</dt>
+
+            <dd>
+              <strong>Your school or program</strong>
+              <span>What you're studying</span>
+            </dd>
+          </div>
+
+          <div>
+            <dt>2023</dt>
+
+            <dd>
+              <strong>Job, club, or volunteer role</strong>
+              <span>One line on what you did</span>
+            </dd>
+          </div>
+
+        </dl>
+
+      </div>
+
+
+      <!-- Contact -->
+      <div
+        id="contact"
+        class="reveal panel"
+        style="--d: 120ms"
+      >
+
+        <h3>Contact</h3>
+
+        <p class="section-note">
+          The best way to reach me is email. I usually reply within
+          a couple of days.
+        </p>
+
+        <ul class="contact-list">
+
+          <li>
+            <a href="mailto:you@example.com">
+              you@example.com
+            </a>
           </li>
 
-          <!-- Project 2 -->
-          <li class="reveal" style="--d: 80ms">
-            <button class="card" type="button" data-open="p2">
-              <span class="thumb">
-                <span class="thumb-label">Add a screenshot (project2-1.jpg)</span>
-                <img src="project2-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-              </span>
-              <span class="card-text">
-                <span class="card-title">Another project</span>
-                <span class="card-desc">Lead with the problem it solves, in one short sentence.</span>
-                <span class="tags"><span>Python</span><span>API</span></span>
-                <span class="card-more">View details</span>
-              </span>
-            </button>
+          <li>
+            <a
+              href="https://github.com/victorgalut"
+              target="_blank"
+              rel="noopener"
+            >
+              github.com/victorgalut
+            </a>
           </li>
 
-          <!-- Project 3 -->
-          <li class="reveal" style="--d: 160ms">
-            <button class="card" type="button" data-open="p3">
-              <span class="thumb">
-                <span class="thumb-label">Add a screenshot (project3-1.jpg)</span>
-                <img src="project3-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-              </span>
-              <span class="card-text">
-                <span class="card-title">Third project</span>
-                <span class="card-desc">Three strong projects beat ten unfinished ones.</span>
-                <span class="tags"><span>React</span></span>
-                <span class="card-more">View details</span>
-              </span>
-            </button>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
           </li>
 
         </ul>
-      </div>
-    </section>
-
-    <!-- ============ INTERESTS & HOBBIES ============ -->
-    <section id="interests" class="section">
-      <div class="wrap">
-        <div class="reveal">
-          <h2>Interests &amp; hobbies</h2>
-          <p class="section-note">What I do when I'm not coding.</p>
-        </div>
-
-        <!-- EDIT: copy one <li class="reveal interest">...</li> block to add another hobby.
-             Photos: hobby1.jpg, hobby2.jpg, hobby3.jpg (4:3 landscape works best) -->
-        <ul class="interests-grid">
-
-          <li class="reveal interest">
-            <div class="interest-photo">
-              <span class="thumb-label">Add a photo (hobby1.jpg)</span>
-              <img src="hobby1.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <h3>Hobby or interest</h3>
-            <p>A sentence or two about what you do and why you love it.</p>
-          </li>
-
-          <li class="reveal interest" style="--d: 100ms">
-            <div class="interest-photo">
-              <span class="thumb-label">Add a photo (hobby2.jpg)</span>
-              <img src="hobby2.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <h3>Another interest</h3>
-            <p>Mention how long you've been doing it, or a favorite moment.</p>
-          </li>
-
-          <li class="reveal interest" style="--d: 200ms">
-            <div class="interest-photo">
-              <span class="thumb-label">Add a photo (hobby3.jpg)</span>
-              <img src="hobby3.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <h3>A third one</h3>
-            <p>Anything counts: sports, music, games, cooking, travel, reading.</p>
-          </li>
-
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============ RESUME + CONTACT ============ -->
-    <section class="section last">
-      <div class="wrap two-col">
-
-        <!-- Resume -->
-        <div id="resume" class="reveal">
-          <h2>Resume</h2>
-          <p class="section-note">The short version is below. The full resume is a PDF.</p>
-
-          <!-- EDIT: upload your resume to the repo and name it resume.pdf -->
-          <a class="button" href="resume.pdf" target="_blank" rel="noopener">Read my resume (PDF)</a>
-
-          <dl class="timeline">
-            <!-- EDIT: add or remove entries, newest first -->
-            <div>
-              <dt>2024 &ndash; present</dt>
-              <dd>
-                <strong>Your school or program</strong>
-                <span>What you're studying</span>
-              </dd>
-            </div>
-            <div>
-              <dt>2023</dt>
-              <dd>
-                <strong>Job, club, or volunteer role</strong>
-                <span>One line on what you did</span>
-              </dd>
-            </div>
-          </dl>
-        </div>
-
-        <!-- Contact -->
-        <div id="contact" class="reveal" style="--d: 120ms">
-          <h2>Contact</h2>
-          <p class="section-note">The best way to reach me is email. I usually reply within a couple of days.</p>
-
-          <ul class="contact-list">
-            <!-- EDIT: your real email and LinkedIn link -->
-            <li><a href="mailto:you@example.com">you@example.com</a></li>
-            <li><a href="https://github.com/victorgalut">github.com/victorgalut</a></li>
-            <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn</a></li>
-          </ul>
-        </div>
 
       </div>
-    </section>
+
+    </div>
+
+  </div>
+
+</section>
+```
 
   </main>
+
+  <!-- ============ FOOTER ============ -->
 
   <footer>
     <p>&copy; 2026 Victor</p>
   </footer>
 
+  <!-- ============================================================
+       PROJECT DETAIL POPUPS
+       ============================================================ -->
 
-  <!-- ============ PROJECT DETAIL POPUPS ============ -->
-  <!-- Each popup opens when its card is clicked.
-       The picture area is a slideshow: each <figure class="slide"> is one image plus its caption.
-       To add an image, copy a whole <figure>...</figure> block. To remove one, delete it.
-       Image files: project1-1.jpg, project1-2.jpg, project1-3.jpg, and so on. -->
+  <!-- ============ PROJECT 1 ============ -->
 
-  <!-- ---------- Project 1 popup ---------- -->
   <dialog id="p1" aria-labelledby="p1-title">
-    <div class="modal-body">
-      <div class="modal-head">
-        <h3 id="p1-title">Project name</h3>
-        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
-      </div>
 
-      <div class="carousel" data-carousel>
-        <div class="track">
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project1-1.jpg)</span>
-              <img src="project1-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe what this image shows, like the home screen or the main feature.</figcaption>
-          </figure>
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project1-2.jpg)</span>
-              <img src="project1-2.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe the second image.</figcaption>
-          </figure>
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project1-3.jpg)</span>
-              <img src="project1-3.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe the third image.</figcaption>
-          </figure>
-        </div>
-        <div class="arrows">
-          <button class="arrow prev" type="button" aria-label="Previous image">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-          </button>
-          <button class="arrow next" type="button" aria-label="Next image">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-        <div class="dots"></div>
-      </div>
+```
+<div class="modal-body">
 
-      <h4>What it is</h4>
-      <p>A longer description. Explain the problem, who it's for, and how it works in a few sentences.</p>
-      <h4>What I built</h4>
-      <p>Describe your part: the features you made, the tools you used, and any decisions you're proud of.</p>
-      <h4>What I learned</h4>
-      <p>One or two things this project taught you, or something you'd do differently next time.</p>
-      <div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+  <div class="modal-head">
+
+    <h3 id="p1-title">
+      Project name
+    </h3>
+
+    <button
+      class="modal-close"
+      type="button"
+      data-close
+      aria-label="Close"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <div class="carousel" data-carousel>
+
+    <div class="track">
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project1-1.jpg)
+          </span>
+
+          <img
+            src="project1-1.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe what this image shows, like the home screen
+          or the main feature.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project1-2.jpg)
+          </span>
+
+          <img
+            src="project1-2.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe the second image.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project1-3.jpg)
+          </span>
+
+          <img
+            src="project1-3.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe the third image.
+        </figcaption>
+
+      </figure>
+
     </div>
+
+
+    <div class="arrows">
+
+      <button
+        class="arrow prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M15 5l-7 7 7 7"/>
+        </svg>
+      </button>
+
+
+      <button
+        class="arrow next"
+        type="button"
+        aria-label="Next image"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="dots"></div>
+
+  </div>
+
+
+  <h4>What it is</h4>
+  <p>
+    A longer description. Explain the problem, who it's for,
+    and how it works in a few sentences.
+  </p>
+
+  <h4>What I built</h4>
+  <p>
+    Describe your part: the features you made, the tools you used,
+    and any decisions you're proud of.
+  </p>
+
+  <h4>What I learned</h4>
+  <p>
+    One or two things this project taught you, or something you'd
+    do differently next time.
+  </p>
+
+  <div class="tags">
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+  </div>
+
+</div>
+```
+
   </dialog>
 
-  <!-- ---------- Project 2 popup ---------- -->
+  <!-- ============ PROJECT 2 ============ -->
+
   <dialog id="p2" aria-labelledby="p2-title">
-    <div class="modal-body">
-      <div class="modal-head">
-        <h3 id="p2-title">Another project</h3>
-        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
-      </div>
 
-      <div class="carousel" data-carousel>
-        <div class="track">
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project2-1.jpg)</span>
-              <img src="project2-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe what this image shows.</figcaption>
-          </figure>
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project2-2.jpg)</span>
-              <img src="project2-2.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe the second image.</figcaption>
-          </figure>
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project2-3.jpg)</span>
-              <img src="project2-3.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe the third image.</figcaption>
-          </figure>
-        </div>
-        <div class="arrows">
-          <button class="arrow prev" type="button" aria-label="Previous image">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-          </button>
-          <button class="arrow next" type="button" aria-label="Next image">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-        <div class="dots"></div>
-      </div>
+```
+<div class="modal-body">
 
-      <h4>What it is</h4>
-      <p>A longer description of this project.</p>
-      <h4>What I built</h4>
-      <p>Your part in it and the tools you used.</p>
-      <h4>What I learned</h4>
-      <p>What this project taught you.</p>
-      <div class="tags"><span>Python</span><span>API</span></div>
+  <div class="modal-head">
+
+    <h3 id="p2-title">
+      Another project
+    </h3>
+
+    <button
+      class="modal-close"
+      type="button"
+      data-close
+      aria-label="Close"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <div class="carousel" data-carousel>
+
+    <div class="track">
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project2-1.jpg)
+          </span>
+
+          <img
+            src="project2-1.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe what this image shows.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project2-2.jpg)
+          </span>
+
+          <img
+            src="project2-2.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe the second image.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project2-3.jpg)
+          </span>
+
+          <img
+            src="project2-3.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe the third image.
+        </figcaption>
+
+      </figure>
+
     </div>
+
+
+    <div class="arrows">
+
+      <button
+        class="arrow prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M15 5l-7 7 7 7"/>
+        </svg>
+      </button>
+
+
+      <button
+        class="arrow next"
+        type="button"
+        aria-label="Next image"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="dots"></div>
+
+  </div>
+
+
+  <h4>What it is</h4>
+  <p>
+    A longer description of this project.
+  </p>
+
+  <h4>What I built</h4>
+  <p>
+    Your part in it and the tools you used.
+  </p>
+
+  <h4>What I learned</h4>
+  <p>
+    What this project taught you.
+  </p>
+
+  <div class="tags">
+    <span>Python</span>
+    <span>API</span>
+  </div>
+
+</div>
+```
+
   </dialog>
 
-  <!-- ---------- Project 3 popup ---------- -->
+  <!-- ============ PROJECT 3 ============ -->
+
   <dialog id="p3" aria-labelledby="p3-title">
-    <div class="modal-body">
-      <div class="modal-head">
-        <h3 id="p3-title">Third project</h3>
-        <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
-      </div>
 
-      <div class="carousel" data-carousel>
-        <div class="track">
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project3-1.jpg)</span>
-              <img src="project3-1.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe what this image shows.</figcaption>
-          </figure>
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project3-2.jpg)</span>
-              <img src="project3-2.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe the second image.</figcaption>
-          </figure>
-          <figure class="slide">
-            <div class="slide-img">
-              <span class="thumb-label">Add an image (project3-3.jpg)</span>
-              <img src="project3-3.jpg" alt="" loading="lazy" onerror="this.remove()">
-            </div>
-            <figcaption>Describe the third image.</figcaption>
-          </figure>
-        </div>
-        <div class="arrows">
-          <button class="arrow prev" type="button" aria-label="Previous image">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
-          </button>
-          <button class="arrow next" type="button" aria-label="Next image">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
-          </button>
-        </div>
-        <div class="dots"></div>
-      </div>
+```
+<div class="modal-body">
 
-      <h4>What it is</h4>
-      <p>A longer description of this project.</p>
-      <h4>What I built</h4>
-      <p>Your part in it and the tools you used.</p>
-      <h4>What I learned</h4>
-      <p>What this project taught you.</p>
-      <div class="tags"><span>React</span></div>
+  <div class="modal-head">
+
+    <h3 id="p3-title">
+      Third project
+    </h3>
+
+    <button
+      class="modal-close"
+      type="button"
+      data-close
+      aria-label="Close"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <div class="carousel" data-carousel>
+
+    <div class="track">
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project3-1.jpg)
+          </span>
+
+          <img
+            src="project3-1.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe what this image shows.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project3-2.jpg)
+          </span>
+
+          <img
+            src="project3-2.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe the second image.
+        </figcaption>
+
+      </figure>
+
+
+      <figure class="slide">
+
+        <div class="slide-img">
+          <span class="thumb-label">
+            Add an image (project3-3.jpg)
+          </span>
+
+          <img
+            src="project3-3.jpg"
+            alt=""
+            loading="lazy"
+            onerror="this.remove()"
+          >
+        </div>
+
+        <figcaption>
+          Describe the third image.
+        </figcaption>
+
+      </figure>
+
     </div>
+
+
+    <div class="arrows">
+
+      <button
+        class="arrow prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M15 5l-7 7 7 7"/>
+        </svg>
+      </button>
+
+
+      <button
+        class="arrow next"
+        type="button"
+        aria-label="Next image"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <div class="dots"></div>
+
+  </div>
+
+
+  <h4>What it is</h4>
+  <p>
+    A longer description of this project.
+  </p>
+
+  <h4>What I built</h4>
+  <p>
+    Your part in it and the tools you used.
+  </p>
+
+  <h4>What I learned</h4>
+  <p>
+    What this project taught you.
+  </p>
+
+  <div class="tags">
+    <span>React</span>
+  </div>
+
+</div>
+```
+
   </dialog>
 
+  <!-- ============ JAVASCRIPT ============ -->
 
   <script>
-    // Fade sections in when they scroll into view, and out when they leave
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle('in-view', entry.isIntersecting);
-      });
-    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    /* ------------------------------------------------------------
+       Scroll reveal
+       ------------------------------------------------------------ */
 
-    // Open a project popup when its card is clicked
-    document.querySelectorAll('[data-open]').forEach((button) => {
-      button.addEventListener('click', () => {
-        const dialog = document.getElementById(button.dataset.open);
-        dialog.showModal();
-        document.documentElement.classList.add('modal-open');
-      });
-    });
-
-    document.querySelectorAll('dialog').forEach((dialog) => {
-      // Close button
-      dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
-      // Clicking the dark area outside the popup closes it
-      dialog.addEventListener('click', (event) => {
-        if (event.target === dialog) dialog.close();
-      });
-      // Stop the page behind from staying locked
-      dialog.addEventListener('close', () => {
-        document.documentElement.classList.remove('modal-open');
-      });
-    });
-
-    // Image slideshows inside the popups
-    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
-      const track = carousel.querySelector('.track');
-      const slides = carousel.querySelectorAll('.slide');
-      const dotsBox = carousel.querySelector('.dots');
-      let current = 0;
-
-      // Only one image: no arrows or dots needed
-      if (slides.length < 2) {
-        carousel.classList.add('single');
-        return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle(
+            'in-view',
+            entry.isIntersecting
+          );
+        });
+      },
+      {
+        threshold: 0.15
       }
+    );
 
-      const dots = [];
-      slides.forEach((_, index) => {
-        const dot = document.createElement('button');
-        dot.type = 'button';
-        dot.className = 'dot';
-        dot.setAttribute('aria-label', 'Show image ' + (index + 1));
-        dot.addEventListener('click', () => goTo(index));
-        dotsBox.appendChild(dot);
-        dots.push(dot);
+    document
+      .querySelectorAll('.reveal')
+      .forEach((el) => observer.observe(el));
+
+
+    /* ------------------------------------------------------------
+       Project modal opening
+       ------------------------------------------------------------ */
+
+    document
+      .querySelectorAll('[data-open]')
+      .forEach((button) => {
+
+        button.addEventListener('click', () => {
+
+          const dialog = document.getElementById(
+            button.dataset.open
+          );
+
+          if (!dialog) return;
+
+          dialog.showModal();
+
+          document.documentElement.classList.add(
+            'modal-open'
+          );
+
+        });
+
       });
 
-      function goTo(index) {
-        current = (index + slides.length) % slides.length; // loops around
-        track.style.transform = 'translateX(' + (-current * 100) + '%)';
-        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
-        slides.forEach((slide, i) => slide.setAttribute('aria-hidden', i !== current));
-      }
 
-      carousel.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
-      carousel.querySelector('.next').addEventListener('click', () => goTo(current + 1));
+    /* ------------------------------------------------------------
+       Project modal closing
+       ------------------------------------------------------------ */
 
-      // Left / right arrow keys while the popup is open
-      carousel.closest('dialog').addEventListener('keydown', (event) => {
-        if (event.key === 'ArrowLeft') goTo(current - 1);
-        if (event.key === 'ArrowRight') goTo(current + 1);
+    document
+      .querySelectorAll('dialog')
+      .forEach((dialog) => {
+
+        const closeButton =
+          dialog.querySelector('[data-close]');
+
+        if (closeButton) {
+
+          closeButton.addEventListener(
+            'click',
+            () => dialog.close()
+          );
+
+        }
+
+
+        /* Click outside the modal */
+
+        dialog.addEventListener('click', (event) => {
+
+          if (event.target === dialog) {
+            dialog.close();
+          }
+
+        });
+
+
+        /* Unlock page after closing */
+
+        dialog.addEventListener('close', () => {
+
+          document.documentElement.classList.remove(
+            'modal-open'
+          );
+
+        });
+
       });
 
-      // Swipe on touch screens
-      let startX = 0;
-      carousel.addEventListener('touchstart', (event) => {
-        startX = event.touches[0].clientX;
-      }, { passive: true });
-      carousel.addEventListener('touchend', (event) => {
-        const distance = event.changedTouches[0].clientX - startX;
-        if (Math.abs(distance) > 50) goTo(current + (distance < 0 ? 1 : -1));
+
+    /* ------------------------------------------------------------
+       Image carousels
+       ------------------------------------------------------------ */
+
+    document
+      .querySelectorAll('[data-carousel]')
+      .forEach((carousel) => {
+
+        const track =
+          carousel.querySelector('.track');
+
+        const slides =
+          carousel.querySelectorAll('.slide');
+
+        const dotsBox =
+          carousel.querySelector('.dots');
+
+        let current = 0;
+
+
+        /* Only one image */
+
+        if (slides.length < 2) {
+
+          carousel.classList.add('single');
+
+          return;
+
+        }
+
+
+        /* Create dots */
+
+        const dots = [];
+
+        slides.forEach((_, index) => {
+
+          const dot =
+            document.createElement('button');
+
+          dot.type = 'button';
+          dot.className = 'dot';
+
+          dot.setAttribute(
+            'aria-label',
+            'Show image ' + (index + 1)
+          );
+
+          dot.addEventListener(
+            'click',
+            () => goTo(index)
+          );
+
+          dotsBox.appendChild(dot);
+
+          dots.push(dot);
+
+        });
+
+
+        /* Go to slide */
+
+        function goTo(index) {
+
+          current =
+            (index + slides.length) %
+            slides.length;
+
+          track.style.transform =
+            'translateX(' +
+            (-current * 100) +
+            '%)';
+
+          dots.forEach((dot, i) => {
+
+            dot.classList.toggle(
+              'active',
+              i === current
+            );
+
+          });
+
+          slides.forEach((slide, i) => {
+
+            slide.setAttribute(
+              'aria-hidden',
+              i !== current
+            );
+
+          });
+
+        }
+
+
+        /* Arrow buttons */
+
+        carousel
+          .querySelector('.prev')
+          .addEventListener(
+            'click',
+            () => goTo(current - 1)
+          );
+
+        carousel
+          .querySelector('.next')
+          .addEventListener(
+            'click',
+            () => goTo(current + 1)
+          );
+
+
+        /* Keyboard navigation */
+
+        carousel
+          .closest('dialog')
+          .addEventListener('keydown', (event) => {
+
+            if (event.key === 'ArrowLeft') {
+              goTo(current - 1);
+            }
+
+            if (event.key === 'ArrowRight') {
+              goTo(current + 1);
+            }
+
+          });
+
+
+        /* Touch swipe */
+
+        let startX = 0;
+
+        carousel.addEventListener(
+          'touchstart',
+          (event) => {
+
+            startX =
+              event.touches[0].clientX;
+
+          },
+          {
+            passive: true
+          }
+        );
+
+
+        carousel.addEventListener(
+          'touchend',
+          (event) => {
+
+            const distance =
+              event.changedTouches[0].clientX -
+              startX;
+
+            if (Math.abs(distance) > 50) {
+
+              goTo(
+                current +
+                (distance < 0 ? 1 : -1)
+              );
+
+            }
+
+          }
+        );
+
+
+        /* Start at first image */
+
+        goTo(0);
+
       });
 
-      goTo(0);
-    });
   </script>
+
 </body>
 </html>
