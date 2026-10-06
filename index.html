@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor | Portfolio</title>
-  <meta name="description" content="Victor's portfolio: projects, interests, resume, and contact info.">
+  <meta name="description" content="Victor's portfolio: experience, projects, interests, resume, and contact info.">
 
-  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="top">
 
-  <!-- ============ TOP BAR ============ -->
+  <!-- ============================================================
+       TOP BAR
+       ============================================================ -->
 
   <header class="top">
     <a class="brand" href="#top">
@@ -26,1044 +33,1717 @@
       <span class="brand-name">Victor</span>
     </a>
 
-```
-<nav aria-label="Main">
-  <a href="#projects">Projects</a>
-  <a href="#interests">Interests</a>
-  <a href="#resume">Resume</a>
-  <a href="#contact">Contact</a>
-</nav>
-```
-
+    <nav aria-label="Main">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
+
 
   <main>
 
-```
-<!-- ============ HERO ============ -->
-<section class="hero" aria-label="Introduction">
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
 
-  <!-- Racing stripes -->
-  <div class="livery" aria-hidden="true">
-    <i></i>
-    <i></i>
-    <i></i>
-  </div>
+    <section class="hero" aria-label="Introduction">
 
-  <div class="hero-inner">
-
-    <!-- Profile / driver -->
-    <div class="driver">
-      <div class="dial">
-
-        <div class="avatar">
-          <span class="avatar-fallback" aria-hidden="true">V</span>
-          <img src="me.jpg" alt="Photo of Victor" onerror="this.remove()">
-        </div>
-
-        <div class="plate">27</div>
-
-      </div>
-    </div>
-
-
-    <!-- Hero text -->
-    <div class="hero-text">
-
-      <div class="lights" aria-hidden="true">
-        <i></i>
-        <i></i>
+      <div class="livery" aria-hidden="true">
         <i></i>
         <i></i>
         <i></i>
       </div>
 
-      <div class="status">
-        Engineering Student · Builder · Motorsport
-      </div>
+      <div class="hero-inner">
 
-      <blockquote>
-        <p>
-          &ldquo;Make it work, then make it good, then make it yours.&rdquo;
-        </p>
-      </blockquote>
+        <div class="driver">
+          <div class="dial">
 
-      <p class="quote-by">Victor</p>
+            <div class="avatar">
+              <span class="avatar-fallback" aria-hidden="true">V</span>
 
-      <p class="intro">
-        I'm an engineering student who likes designing, building, and
-        improving things. From racecar systems to robotics and software,
-        I learn by turning ideas into something real.
-      </p>
+              <img
+                src="me.jpg"
+                alt="Photo of Victor"
+                onerror="this.remove()"
+              >
+            </div>
 
-      <div class="hero-cta">
-        <a class="btn" href="#projects">View projects</a>
-        <a class="btn ghost" href="#resume">Resume &amp; Contact</a>
-      </div>
+            <div class="plate">27</div>
 
-      <dl class="specs">
-
-        <div>
-          <dt>Focus</dt>
-          <dd>Engineering</dd>
+          </div>
         </div>
 
-        <div>
-          <dt>Interests</dt>
-          <dd>Motorsport</dd>
-        </div>
 
-        <div>
-          <dt>Build</dt>
-          <dd>Design + Code</dd>
-        </div>
-
-        <div>
-          <dt>Status</dt>
-          <dd>Available</dd>
-        </div>
-
-      </dl>
-
-    </div>
-
-  </div>
-</section>
-
-<div class="checker" aria-hidden="true"></div>
-
-
-<!-- ============ PROJECTS ============ -->
-<section id="projects" class="section">
-
-  <div class="wrap">
-
-    <div class="reveal sec-head">
-      <span class="sector s1">01</span>
-      <h2>Projects</h2>
-    </div>
-
-    <p class="section-note reveal">
-      Click any project to see more.
-    </p>
-
-
-    <ul class="grid">
-
-      <!-- Project 1 -->
-      <li class="reveal featured">
-
-        <button class="card" type="button" data-open="p1">
-
-          <span class="thumb">
-            <span class="thumb-label">
-              Add a screenshot (project1-1.jpg)
-            </span>
-
-            <img
-              src="project1-1.jpg"
-              alt=""
-              loading="lazy"
-              onerror="this.remove()"
-            >
-          </span>
-
-          <span class="card-text">
-
-            <span class="card-title">
-              Project name
-            </span>
-
-            <span class="card-desc">
-              A one or two sentence summary of what this project does
-              and who it's for.
-            </span>
-
-            <span class="tags">
-              <span>JavaScript</span>
-              <span>HTML</span>
-              <span>CSS</span>
-            </span>
-
-            <span class="card-more">
-              View details
-            </span>
-
-          </span>
-
-        </button>
-
-      </li>
-
-
-      <!-- Project 2 -->
-      <li class="reveal" style="--d: 80ms">
-
-        <button class="card" type="button" data-open="p2">
-
-          <span class="thumb">
-            <span class="thumb-label">
-              Add a screenshot (project2-1.jpg)
-            </span>
-
-            <img
-              src="project2-1.jpg"
-              alt=""
-              loading="lazy"
-              onerror="this.remove()"
-            >
-          </span>
-
-          <span class="card-text">
-
-            <span class="card-title">
-              Another project
-            </span>
-
-            <span class="card-desc">
-              Lead with the problem it solves, in one short sentence.
-            </span>
-
-            <span class="tags">
-              <span>Python</span>
-              <span>API</span>
-            </span>
-
-            <span class="card-more">
-              View details
-            </span>
-
-          </span>
-
-        </button>
-
-      </li>
-
-
-      <!-- Project 3 -->
-      <li class="reveal" style="--d: 160ms">
-
-        <button class="card" type="button" data-open="p3">
-
-          <span class="thumb">
-            <span class="thumb-label">
-              Add a screenshot (project3-1.jpg)
-            </span>
-
-            <img
-              src="project3-1.jpg"
-              alt=""
-              loading="lazy"
-              onerror="this.remove()"
-            >
-          </span>
-
-          <span class="card-text">
-
-            <span class="card-title">
-              Third project
-            </span>
-
-            <span class="card-desc">
-              Three strong projects beat ten unfinished ones.
-            </span>
-
-            <span class="tags">
-              <span>React</span>
-            </span>
-
-            <span class="card-more">
-              View details
-            </span>
-
-          </span>
-
-        </button>
-
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-
-<!-- ============ INTERESTS ============ -->
-<section id="interests" class="section">
-
-  <div class="wrap">
-
-    <div class="reveal sec-head">
-      <span class="sector s2">02</span>
-      <h2>Interests &amp; hobbies</h2>
-    </div>
-
-    <p class="section-note reveal">
-      What I do when I'm not designing, building, or studying.
-    </p>
-
-
-    <ul class="interests-grid">
-
-      <!-- Interest 1 -->
-      <li class="reveal interest">
-
-        <div class="interest-photo">
-          <span class="thumb-label">
-            Add a photo (hobby1.jpg)
-          </span>
-
-          <img
-            src="hobby1.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
-        </div>
-
-        <div class="interest-text">
-          <h3>Hobby or interest</h3>
-
-          <p>
-            A sentence or two about what you do and why you love it.
-          </p>
-        </div>
-
-      </li>
-
-
-      <!-- Interest 2 -->
-      <li class="reveal interest" style="--d: 100ms">
-
-        <div class="interest-photo">
-          <span class="thumb-label">
-            Add a photo (hobby2.jpg)
-          </span>
-
-          <img
-            src="hobby2.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
-        </div>
-
-        <div class="interest-text">
-          <h3>Another interest</h3>
-
-          <p>
-            Mention how long you've been doing it, or a favorite moment.
-          </p>
-        </div>
-
-      </li>
-
-
-      <!-- Interest 3 -->
-      <li class="reveal interest" style="--d: 200ms">
-
-        <div class="interest-photo">
-          <span class="thumb-label">
-            Add a photo (hobby3.jpg)
-          </span>
-
-          <img
-            src="hobby3.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
-        </div>
-
-        <div class="interest-text">
-          <h3>A third one</h3>
-
-          <p>
-            Anything counts: sports, music, games, cooking, travel,
-            or reading.
-          </p>
-        </div>
-
-      </li>
-
-    </ul>
-
-  </div>
-</section>
-
-
-<!-- ============ RESUME + CONTACT ============ -->
-<section class="section finish last">
-
-  <div class="wrap">
-
-    <div class="reveal sec-head">
-      <span class="sector fin"></span>
-      <h2>Resume &amp; Contact</h2>
-    </div>
-
-
-    <div class="two-col">
-
-      <!-- Resume -->
-      <div id="resume" class="reveal panel">
-
-        <h3>Resume</h3>
-
-        <p class="section-note">
-          The short version is below. The full resume is a PDF.
-        </p>
-
-        <a
-          class="btn"
-          href="resume.pdf"
-          target="_blank"
-          rel="noopener"
-        >
-          Read my resume (PDF)
-        </a>
-
-
-        <dl class="timeline">
-
-          <div>
-            <dt>2024 &ndash; present</dt>
-
-            <dd>
-              <strong>Your school or program</strong>
-              <span>What you're studying</span>
-            </dd>
+        <div class="hero-text">
+
+          <div class="lights" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
           </div>
 
-          <div>
-            <dt>2023</dt>
-
-            <dd>
-              <strong>Job, club, or volunteer role</strong>
-              <span>One line on what you did</span>
-            </dd>
+          <div class="status">
+            Engineering Student · Builder · Motorsport
           </div>
 
-        </dl>
+          <blockquote>
+            <p>
+              &ldquo;Make it work, then make it good, then make it yours.&rdquo;
+            </p>
+          </blockquote>
+
+          <p class="quote-by">Victor</p>
+
+          <p class="intro">
+            I'm an engineering student who likes designing, building, and
+            improving things. From racecar systems to robotics and software,
+            I learn by turning ideas into something real.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View projects</a>
+
+            <a class="btn ghost" href="#resume">
+              Resume &amp; Contact
+            </a>
+          </div>
+
+          <dl class="specs">
+
+            <div>
+              <dt>Focus</dt>
+              <dd>Engineering</dd>
+            </div>
+
+            <div>
+              <dt>Interests</dt>
+              <dd>Motorsport</dd>
+            </div>
+
+            <div>
+              <dt>Build</dt>
+              <dd>Design + Code</dd>
+            </div>
+
+            <div>
+              <dt>Status</dt>
+              <dd>Available</dd>
+            </div>
+
+          </dl>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="checker" aria-hidden="true"></div>
+
+
+    <!-- ============================================================
+         EXPERIENCE
+         ============================================================ -->
+
+    <section id="experience" class="section">
+
+      <div class="wrap">
+
+        <div class="reveal sec-head">
+          <span class="sector s1">01</span>
+          <h2>Experience</h2>
+        </div>
+
+        <p class="section-note reveal">
+          The teams, roles, and engineering experiences that have shaped
+          how I design, build, and solve problems.
+        </p>
+
+
+        <div class="exp-list">
+
+
+          <!-- EXPERIENCE 1 -->
+          <details class="exp reveal" open>
+
+            <summary>
+
+              <div class="exp-logo">
+                <span class="thumb-label">
+                  Add logo (fsae-logo.jpg)
+                </span>
+
+                <img
+                  src="fsae-logo.jpg"
+                  alt=""
+                  loading="lazy"
+                  onerror="this.remove()"
+                >
+              </div>
+
+              <div class="exp-head">
+
+                <span class="exp-role">
+                  UofT Formula Racing
+                </span>
+
+                <div class="exp-meta">
+                  <span>Design Team</span>
+                  <span>2026 &ndash; Present</span>
+                </div>
+
+                <span class="exp-blurb">
+                  Designing and developing components for a Formula Student racecar.
+                </span>
+
+              </div>
+
+              <span class="exp-chevron" aria-hidden="true">
+                ↓
+              </span>
+
+            </summary>
+
+
+            <div class="exp-body">
+
+              <p>
+                Working as part of a student engineering team to design,
+                analyze, manufacture, and refine systems for a Formula
+                Student racecar.
+              </p>
+
+              <h4>What I work on</h4>
+
+              <ul class="detail-list">
+                <li>
+                  Mechanical design and refinement of racecar components
+                  using CAD.
+                </li>
+
+                <li>
+                  Engineering analysis and validation using tools such as
+                  ANSYS and engineering calculations.
+                </li>
+
+                <li>
+                  Iterating on existing designs to improve performance,
+                  packaging, manufacturability, and reliability.
+                </li>
+              </ul>
+
+              <div class="tags">
+                <span>SolidWorks</span>
+                <span>CATIA</span>
+                <span>ANSYS</span>
+                <span>Mechanical Design</span>
+                <span>Motorsport</span>
+              </div>
+
+              <button
+                class="btn small-btn"
+                type="button"
+                data-open="e1"
+              >
+                Read more
+              </button>
+
+            </div>
+
+          </details>
+
+
+          <!-- EXPERIENCE 2 -->
+          <details class="exp reveal" style="--d: 100ms">
+
+            <summary>
+
+              <div class="exp-logo">
+                <span class="thumb-label">
+                  Add logo (ftc-logo.jpg)
+                </span>
+
+                <img
+                  src="ftc-logo.jpg"
+                  alt=""
+                  loading="lazy"
+                  onerror="this.remove()"
+                >
+              </div>
+
+              <div class="exp-head">
+
+                <span class="exp-role">
+                  FTC Team 19472
+                </span>
+
+                <div class="exp-meta">
+                  <span>Team Lead</span>
+                  <span>2023 &ndash; 2025</span>
+                </div>
+
+                <span class="exp-blurb">
+                  Led a robotics team through mechanical, electrical, and software development.
+                </span>
+
+              </div>
+
+              <span class="exp-chevron" aria-hidden="true">
+                ↓
+              </span>
+
+            </summary>
+
+
+            <div class="exp-body">
+
+              <p>
+                Led a team of 10+ students through the design, construction,
+                programming, testing, and competition of competitive robots.
+              </p>
+
+              <h4>What I did</h4>
+
+              <ul class="detail-list">
+                <li>
+                  Coordinated technical development across mechanical,
+                  electrical, and software systems.
+                </li>
+
+                <li>
+                  Helped design and iterate robot mechanisms around
+                  competition constraints.
+                </li>
+
+                <li>
+                  Organized the team and helped newer members develop
+                  practical engineering and programming skills.
+                </li>
+              </ul>
+
+              <div class="tags">
+                <span>Leadership</span>
+                <span>Robotics</span>
+                <span>CAD</span>
+                <span>Programming</span>
+                <span>Arduino</span>
+              </div>
+
+              <button
+                class="btn small-btn"
+                type="button"
+                data-open="e2"
+              >
+                Read more
+              </button>
+
+            </div>
+
+          </details>
+
+
+          <!-- EXPERIENCE 3 -->
+          <details class="exp reveal" style="--d: 200ms">
+
+            <summary>
+
+              <div class="exp-logo">
+                <span class="thumb-label">
+                  Add logo (frc-logo.jpg)
+                </span>
+
+                <img
+                  src="frc-logo.jpg"
+                  alt=""
+                  loading="lazy"
+                  onerror="this.remove()"
+                >
+              </div>
+
+              <div class="exp-head">
+
+                <span class="exp-role">
+                  FRC Robotics
+                </span>
+
+                <div class="exp-meta">
+                  <span>Programming Lead</span>
+                  <span>2022 &ndash; 2024</span>
+                </div>
+
+                <span class="exp-blurb">
+                  Developed robot software and competed as a driver and programming lead.
+                </span>
+
+              </div>
+
+              <span class="exp-chevron" aria-hidden="true">
+                ↓
+              </span>
+
+            </summary>
+
+
+            <div class="exp-body">
+
+              <p>
+                Worked on the programming side of a competitive FIRST
+                Robotics Competition team, while also contributing directly
+                to robot operation and strategy.
+              </p>
+
+              <h4>What I did</h4>
+
+              <ul class="detail-list">
+                <li>
+                  Developed Java robot software for autonomous and
+                  driver-controlled operation.
+                </li>
+
+                <li>
+                  Implemented vision-based tracking using Limelight.
+                </li>
+
+                <li>
+                  Competed as a driver and contributed to alliance strategy
+                  and match preparation.
+                </li>
+              </ul>
+
+              <div class="tags">
+                <span>Java</span>
+                <span>Limelight</span>
+                <span>Robotics</span>
+                <span>Computer Vision</span>
+                <span>Team Strategy</span>
+              </div>
+
+              <button
+                class="btn small-btn"
+                type="button"
+                data-open="e3"
+              >
+                Read more
+              </button>
+
+            </div>
+
+          </details>
+
+        </div>
 
       </div>
 
+    </section>
 
-      <!-- Contact -->
-      <div
-        id="contact"
-        class="reveal panel"
-        style="--d: 120ms"
-      >
 
-        <h3>Contact</h3>
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
 
-        <p class="section-note">
-          The best way to reach me is email. I usually reply within
-          a couple of days.
+    <section id="projects" class="section alt">
+
+      <div class="wrap">
+
+        <div class="reveal sec-head">
+          <span class="sector s2">02</span>
+          <h2>Projects</h2>
+        </div>
+
+        <p class="section-note reveal">
+          Click any project to see more.
         </p>
 
-        <ul class="contact-list">
 
-          <li>
-            <a href="mailto:you@example.com">
-              you@example.com
-            </a>
+        <ul class="grid">
+
+
+          <!-- PROJECT 1 -->
+
+          <li class="reveal featured">
+
+            <button
+              class="card"
+              type="button"
+              data-open="p1"
+            >
+
+              <span class="thumb">
+
+                <span class="thumb-label">
+                  Add a screenshot (project1-1.jpg)
+                </span>
+
+                <img
+                  src="project1-1.jpg"
+                  alt=""
+                  loading="lazy"
+                  onerror="this.remove()"
+                >
+
+              </span>
+
+
+              <span class="card-text">
+
+                <span class="card-title">
+                  Project name
+                </span>
+
+                <span class="card-desc">
+                  A one or two sentence summary of what this project does
+                  and who it's for.
+                </span>
+
+                <span class="tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </span>
+
+                <span class="card-more">
+                  View details
+                </span>
+
+              </span>
+
+            </button>
+
           </li>
 
-          <li>
-            <a
-              href="https://github.com/victorgalut"
-              target="_blank"
-              rel="noopener"
+
+          <!-- PROJECT 2 -->
+
+          <li class="reveal" style="--d: 80ms">
+
+            <button
+              class="card"
+              type="button"
+              data-open="p2"
             >
-              github.com/victorgalut
-            </a>
+
+              <span class="thumb">
+
+                <span class="thumb-label">
+                  Add a screenshot (project2-1.jpg)
+                </span>
+
+                <img
+                  src="project2-1.jpg"
+                  alt=""
+                  loading="lazy"
+                  onerror="this.remove()"
+                >
+
+              </span>
+
+
+              <span class="card-text">
+
+                <span class="card-title">
+                  Another project
+                </span>
+
+                <span class="card-desc">
+                  Lead with the problem it solves, in one short sentence.
+                </span>
+
+                <span class="tags">
+                  <span>Python</span>
+                  <span>API</span>
+                </span>
+
+                <span class="card-more">
+                  View details
+                </span>
+
+              </span>
+
+            </button>
+
           </li>
 
-          <li>
-            <a
-              href="https://www.linkedin.com/in/your-profile"
-              target="_blank"
-              rel="noopener"
+
+          <!-- PROJECT 3 -->
+
+          <li class="reveal" style="--d: 160ms">
+
+            <button
+              class="card"
+              type="button"
+              data-open="p3"
             >
-              LinkedIn
-            </a>
+
+              <span class="thumb">
+
+                <span class="thumb-label">
+                  Add a screenshot (project3-1.jpg)
+                </span>
+
+                <img
+                  src="project3-1.jpg"
+                  alt=""
+                  loading="lazy"
+                  onerror="this.remove()"
+                >
+
+              </span>
+
+
+              <span class="card-text">
+
+                <span class="card-title">
+                  Third project
+                </span>
+
+                <span class="card-desc">
+                  Three strong projects beat ten unfinished ones.
+                </span>
+
+                <span class="tags">
+                  <span>React</span>
+                </span>
+
+                <span class="card-more">
+                  View details
+                </span>
+
+              </span>
+
+            </button>
+
           </li>
 
         </ul>
 
       </div>
 
-    </div>
+    </section>
 
-  </div>
 
-</section>
-```
+    <!-- ============================================================
+         INTERESTS
+         ============================================================ -->
+
+    <section id="interests" class="section">
+
+      <div class="wrap">
+
+        <div class="reveal sec-head">
+          <span class="sector s3">03</span>
+          <h2>Interests &amp; hobbies</h2>
+        </div>
+
+        <p class="section-note reveal">
+          What I do when I'm not designing, building, or studying.
+        </p>
+
+
+        <ul class="interests-grid">
+
+
+          <!-- INTEREST 1 -->
+
+          <li class="reveal interest">
+
+            <div class="interest-photo">
+
+              <span class="thumb-label">
+                Add a photo (hobby1.jpg)
+              </span>
+
+              <img
+                src="hobby1.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <div class="interest-text">
+
+              <h3>Hobby or interest</h3>
+
+              <p>
+                A sentence or two about what you do and why you love it.
+              </p>
+
+            </div>
+
+          </li>
+
+
+          <!-- INTEREST 2 -->
+
+          <li
+            class="reveal interest"
+            style="--d: 100ms"
+          >
+
+            <div class="interest-photo">
+
+              <span class="thumb-label">
+                Add a photo (hobby2.jpg)
+              </span>
+
+              <img
+                src="hobby2.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <div class="interest-text">
+
+              <h3>Another interest</h3>
+
+              <p>
+                Mention how long you've been doing it,
+                or a favorite moment.
+              </p>
+
+            </div>
+
+          </li>
+
+
+          <!-- INTEREST 3 -->
+
+          <li
+            class="reveal interest"
+            style="--d: 200ms"
+          >
+
+            <div class="interest-photo">
+
+              <span class="thumb-label">
+                Add a photo (hobby3.jpg)
+              </span>
+
+              <img
+                src="hobby3.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <div class="interest-text">
+
+              <h3>A third one</h3>
+
+              <p>
+                Anything counts: sports, music, games,
+                cooking, travel, or reading.
+              </p>
+
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================================================
+         RESUME + CONTACT
+         ============================================================ -->
+
+    <section class="section finish last">
+
+      <div class="wrap">
+
+        <div class="reveal sec-head">
+          <span class="sector fin">FIN</span>
+          <h2>Resume &amp; Contact</h2>
+        </div>
+
+
+        <div class="two-col">
+
+
+          <!-- RESUME -->
+
+          <div
+            id="resume"
+            class="reveal panel"
+          >
+
+            <h3>Resume</h3>
+
+            <p class="section-note">
+              The short version is below. The full resume is a PDF.
+            </p>
+
+            <a
+              class="btn"
+              href="resume.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Read my resume (PDF)
+            </a>
+
+
+            <dl class="timeline">
+
+              <div>
+
+                <dt>2024 &ndash; present</dt>
+
+                <dd>
+                  <strong>University of Toronto</strong>
+                  <span>Engineering</span>
+                </dd>
+
+              </div>
+
+
+              <div>
+
+                <dt>2026 &ndash; present</dt>
+
+                <dd>
+                  <strong>UofT Formula Racing</strong>
+                  <span>Design Team</span>
+                </dd>
+
+              </div>
+
+
+              <div>
+
+                <dt>Previous</dt>
+
+                <dd>
+                  <strong>FIRST Robotics</strong>
+                  <span>Programming &amp; Team Leadership</span>
+                </dd>
+
+              </div>
+
+            </dl>
+
+          </div>
+
+
+          <!-- CONTACT -->
+
+          <div
+            id="contact"
+            class="reveal panel"
+            style="--d: 120ms"
+          >
+
+            <h3>Contact</h3>
+
+            <p class="section-note">
+              The best way to reach me is email. I usually reply within
+              a couple of days.
+            </p>
+
+            <ul class="contact-list">
+
+              <li>
+                <a href="mailto:you@example.com">
+                  you@example.com
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/victorgalut"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  github.com/victorgalut
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/your-profile"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  LinkedIn
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
-  <!-- ============ FOOTER ============ -->
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
 
   <footer>
     <p>&copy; 2026 Victor</p>
   </footer>
 
+
   <!-- ============================================================
-       PROJECT DETAIL POPUPS
+       EXPERIENCE DETAIL POPUPS
        ============================================================ -->
 
-  <!-- ============ PROJECT 1 ============ -->
+
+  <!-- EXPERIENCE 1 -->
+
+  <dialog id="e1" aria-labelledby="e1-title">
+
+    <div class="modal-body">
+
+      <div class="modal-head">
+
+        <div>
+          <h3 id="e1-title">
+            UofT Formula Racing
+          </h3>
+
+          <p class="detail-sub">
+            Design Team · 2026 &ndash; Present
+          </p>
+        </div>
+
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
+
+      </div>
+
+
+      <h4>What I do</h4>
+
+      <p>
+        As part of UofT Formula Racing's design team, I contribute to
+        the engineering development of a Formula Student racecar.
+        My work involves taking existing designs, identifying areas
+        for improvement, and developing components that balance
+        performance, packaging, manufacturability, and reliability.
+      </p>
+
+
+      <h4>Engineering work</h4>
+
+      <div class="detail-content">
+
+        <ul>
+          <li>
+            Develop and refine mechanical components in CAD.
+          </li>
+
+          <li>
+            Perform engineering analysis and evaluate component
+            performance.
+          </li>
+
+          <li>
+            Work with racecar packaging, bearings, hubs, braking,
+            and suspension-related components.
+          </li>
+
+          <li>
+            Iterate designs based on engineering constraints and
+            previous-generation components.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="tags">
+        <span>SolidWorks</span>
+        <span>CATIA</span>
+        <span>ANSYS</span>
+        <span>FSAE</span>
+        <span>Mechanical Design</span>
+      </div>
+
+    </div>
+
+  </dialog>
+
+
+  <!-- EXPERIENCE 2 -->
+
+  <dialog id="e2" aria-labelledby="e2-title">
+
+    <div class="modal-body">
+
+      <div class="modal-head">
+
+        <div>
+          <h3 id="e2-title">
+            FTC Team 19472
+          </h3>
+
+          <p class="detail-sub">
+            Team Lead · 2023 &ndash; 2025
+          </p>
+        </div>
+
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
+
+      </div>
+
+
+      <h4>What I did</h4>
+
+      <p>
+        Led a team of more than 10 students through competitive
+        robotics projects. I worked across multiple areas of the
+        robot while helping coordinate the team's technical and
+        organizational development.
+      </p>
+
+
+      <h4>Leadership &amp; engineering</h4>
+
+      <div class="detail-content">
+
+        <ul>
+          <li>
+            Coordinated mechanical, electrical, and software work.
+          </li>
+
+          <li>
+            Helped design and iterate mechanisms around competition
+            requirements.
+          </li>
+
+          <li>
+            Mentored team members and helped establish technical
+            workflows.
+          </li>
+
+          <li>
+            Balanced engineering decisions with competition deadlines
+            and reliability requirements.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="tags">
+        <span>Leadership</span>
+        <span>Robotics</span>
+        <span>CAD</span>
+        <span>Arduino</span>
+        <span>Programming</span>
+      </div>
+
+    </div>
+
+  </dialog>
+
+
+  <!-- EXPERIENCE 3 -->
+
+  <dialog id="e3" aria-labelledby="e3-title">
+
+    <div class="modal-body">
+
+      <div class="modal-head">
+
+        <div>
+          <h3 id="e3-title">
+            FRC Robotics
+          </h3>
+
+          <p class="detail-sub">
+            Programming Lead · 2022 &ndash; 2024
+          </p>
+        </div>
+
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
+
+      </div>
+
+
+      <h4>What I did</h4>
+
+      <p>
+        Worked on the programming and competition side of a FIRST
+        Robotics Competition team, developing robot software while
+        also participating directly in driving and match strategy.
+      </p>
+
+
+      <h4>Technical work</h4>
+
+      <div class="detail-content">
+
+        <ul>
+          <li>
+            Developed Java software for robot control.
+          </li>
+
+          <li>
+            Implemented vision tracking using Limelight.
+          </li>
+
+          <li>
+            Worked on autonomous and driver-controlled functionality.
+          </li>
+
+          <li>
+            Competed as a driver and contributed to alliance strategy.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="tags">
+        <span>Java</span>
+        <span>Limelight</span>
+        <span>Robotics</span>
+        <span>Computer Vision</span>
+      </div>
+
+    </div>
+
+  </dialog>
+
+
+  <!-- ============================================================
+       PROJECT 1
+       ============================================================ -->
 
   <dialog id="p1" aria-labelledby="p1-title">
 
-```
-<div class="modal-body">
+    <div class="modal-body">
 
-  <div class="modal-head">
+      <div class="modal-head">
 
-    <h3 id="p1-title">
-      Project name
-    </h3>
+        <h3 id="p1-title">
+          Project name
+        </h3>
 
-    <button
-      class="modal-close"
-      type="button"
-      data-close
-      aria-label="Close"
-    >
-      &times;
-    </button>
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
 
-  </div>
+      </div>
 
 
-  <div class="carousel" data-carousel>
+      <div class="carousel" data-carousel>
 
-    <div class="track">
+        <div class="track">
 
-      <figure class="slide">
+          <figure class="slide">
 
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project1-1.jpg)
-          </span>
+            <div class="slide-img">
 
-          <img
-            src="project1-1.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
+              <span class="thumb-label">
+                Add an image (project1-1.jpg)
+              </span>
+
+              <img
+                src="project1-1.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe what this image shows, like the home screen
+              or the main feature.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="slide">
+
+            <div class="slide-img">
+
+              <span class="thumb-label">
+                Add an image (project1-2.jpg)
+              </span>
+
+              <img
+                src="project1-2.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe the second image.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="slide">
+
+            <div class="slide-img">
+
+              <span class="thumb-label">
+                Add an image (project1-3.jpg)
+              </span>
+
+              <img
+                src="project1-3.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe the third image.
+            </figcaption>
+
+          </figure>
+
         </div>
 
-        <figcaption>
-          Describe what this image shows, like the home screen
-          or the main feature.
-        </figcaption>
 
-      </figure>
+        <div class="arrows">
 
-
-      <figure class="slide">
-
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project1-2.jpg)
-          </span>
-
-          <img
-            src="project1-2.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
+          <button
+            class="arrow prev"
+            type="button"
+            aria-label="Previous image"
           >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15 5l-7 7 7 7"/>
+            </svg>
+          </button>
+
+
+          <button
+            class="arrow next"
+            type="button"
+            aria-label="Next image"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+
         </div>
 
-        <figcaption>
-          Describe the second image.
-        </figcaption>
+        <div class="dots"></div>
 
-      </figure>
+      </div>
 
 
-      <figure class="slide">
+      <h4>What it is</h4>
 
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project1-3.jpg)
-          </span>
+      <p>
+        A longer description. Explain the problem, who it's for,
+        and how it works in a few sentences.
+      </p>
 
-          <img
-            src="project1-3.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
-        </div>
 
-        <figcaption>
-          Describe the third image.
-        </figcaption>
+      <h4>What I built</h4>
 
-      </figure>
+      <p>
+        Describe your part: the features you made, the tools you used,
+        and any decisions you're proud of.
+      </p>
+
+
+      <h4>What I learned</h4>
+
+      <p>
+        One or two things this project taught you, or something you'd
+        do differently next time.
+      </p>
+
+
+      <div class="tags">
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
 
     </div>
-
-
-    <div class="arrows">
-
-      <button
-        class="arrow prev"
-        type="button"
-        aria-label="Previous image"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M15 5l-7 7 7 7"/>
-        </svg>
-      </button>
-
-
-      <button
-        class="arrow next"
-        type="button"
-        aria-label="Next image"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M9 5l7 7-7 7"/>
-        </svg>
-      </button>
-
-    </div>
-
-    <div class="dots"></div>
-
-  </div>
-
-
-  <h4>What it is</h4>
-  <p>
-    A longer description. Explain the problem, who it's for,
-    and how it works in a few sentences.
-  </p>
-
-  <h4>What I built</h4>
-  <p>
-    Describe your part: the features you made, the tools you used,
-    and any decisions you're proud of.
-  </p>
-
-  <h4>What I learned</h4>
-  <p>
-    One or two things this project taught you, or something you'd
-    do differently next time.
-  </p>
-
-  <div class="tags">
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-  </div>
-
-</div>
-```
 
   </dialog>
 
-  <!-- ============ PROJECT 2 ============ -->
+
+  <!-- ============================================================
+       PROJECT 2
+       ============================================================ -->
 
   <dialog id="p2" aria-labelledby="p2-title">
 
-```
-<div class="modal-body">
+    <div class="modal-body">
 
-  <div class="modal-head">
+      <div class="modal-head">
 
-    <h3 id="p2-title">
-      Another project
-    </h3>
+        <h3 id="p2-title">
+          Another project
+        </h3>
 
-    <button
-      class="modal-close"
-      type="button"
-      data-close
-      aria-label="Close"
-    >
-      &times;
-    </button>
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
 
-  </div>
+      </div>
 
 
-  <div class="carousel" data-carousel>
+      <div class="carousel" data-carousel>
 
-    <div class="track">
+        <div class="track">
 
-      <figure class="slide">
+          <figure class="slide">
 
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project2-1.jpg)
-          </span>
+            <div class="slide-img">
 
-          <img
-            src="project2-1.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
+              <span class="thumb-label">
+                Add an image (project2-1.jpg)
+              </span>
+
+              <img
+                src="project2-1.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe what this image shows.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="slide">
+
+            <div class="slide-img">
+
+              <span class="thumb-label">
+                Add an image (project2-2.jpg)
+              </span>
+
+              <img
+                src="project2-2.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe the second image.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="slide">
+
+            <div class="slide-img">
+
+              <span class="thumb-label">
+                Add an image (project2-3.jpg)
+              </span>
+
+              <img
+                src="project2-3.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe the third image.
+            </figcaption>
+
+          </figure>
+
         </div>
 
-        <figcaption>
-          Describe what this image shows.
-        </figcaption>
 
-      </figure>
+        <div class="arrows">
 
-
-      <figure class="slide">
-
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project2-2.jpg)
-          </span>
-
-          <img
-            src="project2-2.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
+          <button
+            class="arrow prev"
+            type="button"
+            aria-label="Previous image"
           >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15 5l-7 7 7 7"/>
+            </svg>
+          </button>
+
+
+          <button
+            class="arrow next"
+            type="button"
+            aria-label="Next image"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+
         </div>
 
-        <figcaption>
-          Describe the second image.
-        </figcaption>
+        <div class="dots"></div>
 
-      </figure>
+      </div>
 
 
-      <figure class="slide">
+      <h4>What it is</h4>
 
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project2-3.jpg)
-          </span>
+      <p>
+        A longer description of this project.
+      </p>
 
-          <img
-            src="project2-3.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
-        </div>
 
-        <figcaption>
-          Describe the third image.
-        </figcaption>
+      <h4>What I built</h4>
 
-      </figure>
+      <p>
+        Your part in it and the tools you used.
+      </p>
+
+
+      <h4>What I learned</h4>
+
+      <p>
+        What this project taught you.
+      </p>
+
+
+      <div class="tags">
+        <span>Python</span>
+        <span>API</span>
+      </div>
 
     </div>
-
-
-    <div class="arrows">
-
-      <button
-        class="arrow prev"
-        type="button"
-        aria-label="Previous image"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M15 5l-7 7 7 7"/>
-        </svg>
-      </button>
-
-
-      <button
-        class="arrow next"
-        type="button"
-        aria-label="Next image"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M9 5l7 7-7 7"/>
-        </svg>
-      </button>
-
-    </div>
-
-    <div class="dots"></div>
-
-  </div>
-
-
-  <h4>What it is</h4>
-  <p>
-    A longer description of this project.
-  </p>
-
-  <h4>What I built</h4>
-  <p>
-    Your part in it and the tools you used.
-  </p>
-
-  <h4>What I learned</h4>
-  <p>
-    What this project taught you.
-  </p>
-
-  <div class="tags">
-    <span>Python</span>
-    <span>API</span>
-  </div>
-
-</div>
-```
 
   </dialog>
 
-  <!-- ============ PROJECT 3 ============ -->
+
+  <!-- ============================================================
+       PROJECT 3
+       ============================================================ -->
 
   <dialog id="p3" aria-labelledby="p3-title">
 
-```
-<div class="modal-body">
+    <div class="modal-body">
 
-  <div class="modal-head">
+      <div class="modal-head">
 
-    <h3 id="p3-title">
-      Third project
-    </h3>
+        <h3 id="p3-title">
+          Third project
+        </h3>
 
-    <button
-      class="modal-close"
-      type="button"
-      data-close
-      aria-label="Close"
-    >
-      &times;
-    </button>
+        <button
+          class="modal-close"
+          type="button"
+          data-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
 
-  </div>
+      </div>
 
 
-  <div class="carousel" data-carousel>
+      <div class="carousel" data-carousel>
 
-    <div class="track">
+        <div class="track">
 
-      <figure class="slide">
+          <figure class="slide">
 
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project3-1.jpg)
-          </span>
+            <div class="slide-img">
 
-          <img
-            src="project3-1.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
+              <span class="thumb-label">
+                Add an image (project3-1.jpg)
+              </span>
+
+              <img
+                src="project3-1.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe what this image shows.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="slide">
+
+            <div class="slide-img">
+
+              <span class="thumb-label">
+                Add an image (project3-2.jpg)
+              </span>
+
+              <img
+                src="project3-2.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe the second image.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="slide">
+
+            <div class="slide-img">
+
+              <span class="thumb-label">
+                Add an image (project3-3.jpg)
+              </span>
+
+              <img
+                src="project3-3.jpg"
+                alt=""
+                loading="lazy"
+                onerror="this.remove()"
+              >
+
+            </div>
+
+            <figcaption>
+              Describe the third image.
+            </figcaption>
+
+          </figure>
+
         </div>
 
-        <figcaption>
-          Describe what this image shows.
-        </figcaption>
 
-      </figure>
+        <div class="arrows">
 
-
-      <figure class="slide">
-
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project3-2.jpg)
-          </span>
-
-          <img
-            src="project3-2.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
+          <button
+            class="arrow prev"
+            type="button"
+            aria-label="Previous image"
           >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M15 5l-7 7 7 7"/>
+            </svg>
+          </button>
+
+
+          <button
+            class="arrow next"
+            type="button"
+            aria-label="Next image"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+
         </div>
 
-        <figcaption>
-          Describe the second image.
-        </figcaption>
+        <div class="dots"></div>
 
-      </figure>
+      </div>
 
 
-      <figure class="slide">
+      <h4>What it is</h4>
 
-        <div class="slide-img">
-          <span class="thumb-label">
-            Add an image (project3-3.jpg)
-          </span>
+      <p>
+        A longer description of this project.
+      </p>
 
-          <img
-            src="project3-3.jpg"
-            alt=""
-            loading="lazy"
-            onerror="this.remove()"
-          >
-        </div>
 
-        <figcaption>
-          Describe the third image.
-        </figcaption>
+      <h4>What I built</h4>
 
-      </figure>
+      <p>
+        Your part in it and the tools you used.
+      </p>
+
+
+      <h4>What I learned</h4>
+
+      <p>
+        What this project taught you.
+      </p>
+
+
+      <div class="tags">
+        <span>React</span>
+      </div>
 
     </div>
-
-
-    <div class="arrows">
-
-      <button
-        class="arrow prev"
-        type="button"
-        aria-label="Previous image"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M15 5l-7 7 7 7"/>
-        </svg>
-      </button>
-
-
-      <button
-        class="arrow next"
-        type="button"
-        aria-label="Next image"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          width="20"
-          height="20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <path d="M9 5l7 7-7 7"/>
-        </svg>
-      </button>
-
-    </div>
-
-    <div class="dots"></div>
-
-  </div>
-
-
-  <h4>What it is</h4>
-  <p>
-    A longer description of this project.
-  </p>
-
-  <h4>What I built</h4>
-  <p>
-    Your part in it and the tools you used.
-  </p>
-
-  <h4>What I learned</h4>
-  <p>
-    What this project taught you.
-  </p>
-
-  <div class="tags">
-    <span>React</span>
-  </div>
-
-</div>
-```
 
   </dialog>
 
-  <!-- ============ JAVASCRIPT ============ -->
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
 
   <script>
 
-    /* ------------------------------------------------------------
-       Scroll reveal
-       ------------------------------------------------------------ */
+    /* ============================================================
+       SCROLL REVEAL
+       ============================================================ */
 
     const observer = new IntersectionObserver(
       (entries) => {
+
         entries.forEach((entry) => {
+
           entry.target.classList.toggle(
             'in-view',
             entry.isIntersecting
           );
+
         });
+
       },
       {
         threshold: 0.15
       }
     );
 
+
     document
       .querySelectorAll('.reveal')
       .forEach((el) => observer.observe(el));
 
 
-    /* ------------------------------------------------------------
-       Project modal opening
-       ------------------------------------------------------------ */
+    /* ============================================================
+       MODAL OPENING
+       ============================================================ */
 
     document
       .querySelectorAll('[data-open]')
@@ -1088,9 +1768,9 @@
       });
 
 
-    /* ------------------------------------------------------------
-       Project modal closing
-       ------------------------------------------------------------ */
+    /* ============================================================
+       MODAL CLOSING
+       ============================================================ */
 
     document
       .querySelectorAll('dialog')
@@ -1098,6 +1778,7 @@
 
         const closeButton =
           dialog.querySelector('[data-close]');
+
 
         if (closeButton) {
 
@@ -1109,8 +1790,6 @@
         }
 
 
-        /* Click outside the modal */
-
         dialog.addEventListener('click', (event) => {
 
           if (event.target === dialog) {
@@ -1119,8 +1798,6 @@
 
         });
 
-
-        /* Unlock page after closing */
 
         dialog.addEventListener('close', () => {
 
@@ -1133,9 +1810,9 @@
       });
 
 
-    /* ------------------------------------------------------------
-       Image carousels
-       ------------------------------------------------------------ */
+    /* ============================================================
+       PROJECT IMAGE CAROUSELS
+       ============================================================ */
 
     document
       .querySelectorAll('[data-carousel]')
@@ -1153,8 +1830,6 @@
         let current = 0;
 
 
-        /* Only one image */
-
         if (slides.length < 2) {
 
           carousel.classList.add('single');
@@ -1164,9 +1839,8 @@
         }
 
 
-        /* Create dots */
-
         const dots = [];
+
 
         slides.forEach((_, index) => {
 
@@ -1193,18 +1867,18 @@
         });
 
 
-        /* Go to slide */
-
         function goTo(index) {
 
           current =
             (index + slides.length) %
             slides.length;
 
+
           track.style.transform =
             'translateX(' +
             (-current * 100) +
-            '%)';
+            '%';
+
 
           dots.forEach((dot, i) => {
 
@@ -1214,6 +1888,7 @@
             );
 
           });
+
 
           slides.forEach((slide, i) => {
 
@@ -1227,14 +1902,13 @@
         }
 
 
-        /* Arrow buttons */
-
         carousel
           .querySelector('.prev')
           .addEventListener(
             'click',
             () => goTo(current - 1)
           );
+
 
         carousel
           .querySelector('.next')
@@ -1243,8 +1917,6 @@
             () => goTo(current + 1)
           );
 
-
-        /* Keyboard navigation */
 
         carousel
           .closest('dialog')
@@ -1261,9 +1933,8 @@
           });
 
 
-        /* Touch swipe */
-
         let startX = 0;
+
 
         carousel.addEventListener(
           'touchstart',
@@ -1287,6 +1958,7 @@
               event.changedTouches[0].clientX -
               startX;
 
+
             if (Math.abs(distance) > 50) {
 
               goTo(
@@ -1299,8 +1971,6 @@
           }
         );
 
-
-        /* Start at first image */
 
         goTo(0);
 
