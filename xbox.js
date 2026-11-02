@@ -37,7 +37,7 @@
   }
 
   // Page load
-  setTimeout(function () { unlock('load', 'Welcome to the portfolio', 10); }, 2200);
+  setTimeout(function () { unlock('load', 'Welcome to the portfolio', 10); }, document.documentElement.classList.contains('booting') ? 5200 : 1500);
 
   // Opening any popup (project or experience)
   document.querySelectorAll('[data-open]').forEach(function (btn) {
