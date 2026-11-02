@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Victor | Portfolio</title>
 <meta name="description" content="Victor's portfolio: experience, projects, interests, resume, and contact info.">
-<script>document.documentElement.classList.add('js');</script>
+<script>document.documentElement.classList.add('js');try{if(!sessionStorage.getItem('booted')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('booting');}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body id="top">
+<div id="boot" aria-hidden="true"><div class="boot-ring"><i></i><i></i><i></i><i></i></div><div class="boot-name">VICTOR</div><div class="boot-sub">Welcome back</div></div>
 
 <header class="top">
 <a class="brand" href="#top"><span class="brand-mark">V</span><span class="brand-name">Victor</span></a>
@@ -28,7 +29,6 @@
 <div class="plate">27</div>
 </div></div>
 <div class="hero-text">
-<div class="lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
 <div class="status">Online &middot; Engineering Student &middot; Builder</div>
 <blockquote><p>&ldquo;Make it work, then make it good, then make it yours.&rdquo;</p></blockquote>
 <p class="quote-by">Victor</p>
@@ -43,8 +43,6 @@
 </div>
 </div>
 </section>
-
-<div class="checker" aria-hidden="true"></div>
 
 <section id="experience" class="section"><div class="wrap">
 <div class="reveal sec-head"><span class="sector s1">20G</span><h2>Experience</h2></div>
@@ -133,7 +131,8 @@
 </div></div></section>
 </main>
 
-<footer><p>&copy; 2026 Victor</p></footer>
+<a class="guide-btn" href="#top" aria-label="Back to top"><span></span></a>
+<footer><div class="hints" aria-hidden="true"><span><b class="a">A</b> Select</span><span><b class="b">B</b> Back</span><span><b class="x">X</b> Menu</span><span><b class="y">Y</b> Top</span></div><p>&copy; 2026 Victor</p></footer>
 
 <dialog id="e1" aria-labelledby="e1-title"><div class="modal-body">
 <div class="modal-head"><div><h3 id="e1-title">UofT Formula Racing</h3><p class="detail-sub">Design Team · 2026 &ndash; Present</p></div><button class="modal-close" type="button" data-close aria-label="Close">&times;</button></div>
@@ -225,6 +224,22 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
   });
   goTo(0);
 });
+
+(function () {
+  const root = document.documentElement, boot = document.getElementById('boot');
+  if (!boot) return;
+  let finished = false;
+  function finish() {
+    if (finished) return; finished = true;
+    root.classList.remove('booting');
+    boot.remove();
+    try { sessionStorage.setItem('booted', '1'); } catch (e) {}
+  }
+  if (!root.classList.contains('booting')) { boot.remove(); return; }
+  setTimeout(finish, 4400);
+  boot.addEventListener('click', finish);
+  addEventListener('keydown', finish, { once: true });
+})();
 </script>
 <script src="xbox.js"></script>
 </body>
